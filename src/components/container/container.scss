@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap&family=Kalam:wght@700&display=swap');
+
+.container{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  overflow-x: scroll;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  // &::-webkit-scrollbar{
+  //   display: none;
+  // }
+}
+.about {
+  box-sizing: border-box;
+	width: 1300px;
+	height: 60%;
+	background: #fff;
+	border-radius: 30px;
+	display: flex;
+  padding: 0 50px 0 100px;
+  margin: 200px 0 0 1500px;
+	img {
+		margin: 60px 0 0 20px;
+		height: 70%;
+		aspect-ratio: 15/21;
+		border-radius: 20px;
+	}
+	.texte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    h2{
+      font-family : "Kalam";
+      font-size: 35px;
+    }
+    p{
+      font-family: "Satisfy";
+      font-weight: 500;
+      font-size: 25px;
+      letter-spacing: 1px;
+      word-spacing: auto;
+      line-height: 45px;
+      padding: 0px 80px 0 30px;
+      margin: 0;
+    }
+	}
+}
+.techno{
+  box-sizing: border-box;
+	width: 1300px;
+	height: 60%;
+	background: #fff;
+	z-index: 100;
+	border-radius: 30px;
+	display: flex;
+  padding: 0 50px 0 100px;
+  margin: 200px 0;
+
+}
