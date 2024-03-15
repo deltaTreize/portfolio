@@ -1,13 +1,12 @@
-import "./container.scss";
+import React from "react";
+import "./aboutPage.scss";
 
-export function Container() {
+ function AboutPage() {
 
 	return (
-		<div className="container" >
 			<div className="about" id="about">
-				<img src="./assets/moi.png" alt="" />
-				<div className="texte">
 					<h2>LEBLOND Ludovic</h2>
+				<img src="./assets/moi.png" alt="moi" />
 					<p>
 						Depuis que j'ai 6 ans, je suis passionné d'informatique.
 						J'ai toujours voulu travailler dans le monde de
@@ -19,8 +18,8 @@ export function Container() {
 						l’école en ligne OpenClassroom.
 					</p>
 				</div>
-			</div>
-      <div className="techno"></div>
-		</div>
+
 	);
 }
+
+export default AboutPage;

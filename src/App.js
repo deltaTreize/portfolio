@@ -1,7 +1,7 @@
 import React from "react";
-import { Background } from "./components/background/background.js";
-import { Navbar } from "./components/navBar/navBar.js";
-import { Container } from "./components/container/container.js";
+import { Background } from "./components/background/background.tsx";
+import { Navbar } from "./components/navBar/navBar.tsx";
+import  Book  from "./pages/container/container.tsx";
 
 import "./App.scss";
 
@@ -9,8 +9,8 @@ function App() {
 	return (
     <>
 				<Navbar />
-				<Background />
-        <Container/>
+				{/* <Background /> */}
+				<Book/>
     </>
 	);
 }
