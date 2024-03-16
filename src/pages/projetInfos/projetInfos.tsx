@@ -5,11 +5,11 @@ import "./projetInfos.scss";
 export interface props {
 	nameProjet: string;
 	description: string;
-  language1: string;
-  language2: string;
-  language3: string;
-  language4: string;
-  language5: string;
+  langage1: string;
+  langage2: string;
+  langage3: string;
+  langage4: string;
+  langage5: string;
   techno1: string;
   techno2: string;
   techno3: string;
@@ -30,17 +30,19 @@ export interface props {
 function ProjetInfos(props: props) {
 	return (
 		<div className="container-infos" key={props.nameProjet}>
-			<h3>Décription du projet</h3>
+			<h3>Decription du projet</h3>
 			<p className="description">{props.description}</p>
-			<h3>Languages utilisés</h3>
+      <div className="line"></div>
+			<h3>Langages utilisés</h3>
 			<ul>
-        <li>{props.language1}</li>
-        <li>{props.language2}</li>
-        <li>{props.language3}</li>
-        <li>{props.language4}</li>
-        <li>{props.language5}</li>
+        <li>{props.langage1}</li>
+        <li>{props.langage2}</li>
+        <li>{props.langage3}</li>
+        <li>{props.langage4}</li>
+        <li>{props.langage5}</li>
       </ul>
-			<h3>technos utilisés</h3>
+      <div className="line"></div>
+			<h3>technos utilisées</h3>
 			<ul>
         <li>{props.techno1}</li>
         <li>{props.techno2}</li>
@@ -48,14 +50,16 @@ function ProjetInfos(props: props) {
         <li>{props.techno4}</li>
         <li>{props.techno5}</li>
       </ul>
-			<h3>Compétances aquises durant ce projet</h3>
-			<ul>
+      <div className="line"></div>
+			<h3>Compétences acquises durant ce projet</h3>
+			<ul className="ulCompetances">
         <li>{props.competance1}</li>
         <li>{props.competance2}</li>
         <li>{props.competance3}</li>
         <li>{props.competance4}</li>
         <li>{props.competance5}</li>
       </ul>
+      <div className="line"></div>
 			<h3>Améliorations à venir</h3>
 			<ul className="ulAmeliorations">
         <li>{props.ameliorations1}</li>

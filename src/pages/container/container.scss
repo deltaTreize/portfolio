@@ -17,9 +17,9 @@
 	transition-duration: 1s;
 	perspective: 1500;
 }
-input {
-	display: none;
-}
+	input {
+		display: none;
+	}
 .cover, .back-cover {
 	background-image: url(../../../public/assets/couverture.png);
 	width: 100%;
@@ -46,12 +46,23 @@ input {
     top: 10%;
     transform: translateX(-50%);
     text-shadow: 3px 3px 2px rgb(73, 62, 0);
+    transition: opacity 0.1s 0.3s;
+		opacity: 1;
+		z-index: 1;
   }
 }
-.cover label {
-	width: 100%;
-	height: 100%;
+
+.cover .front-page label{
+	position: absolute;
+	height: 83vh;
+  aspect-ratio: 15/21;
+	border-radius: 0 15px 15px 0;
+	margin-top: 10px;
+	top: 0;
+	left: 0;
+	transform: rotateY(0deg);
 	cursor: pointer;
+	z-index: 2;
 }
 .back-cover {
 	position: relative;
@@ -59,7 +70,7 @@ input {
 }
 .page {
 	position: absolute;
-	background-color: rgb(228, 228, 228);
+	background-color: #f3f3eb;
 	height: 83vh;
   aspect-ratio: 15/21;
 	border-radius: 0 15px 15px 0;
@@ -96,35 +107,97 @@ input {
 .prev {
 	left: 1em;
 }
+#page0 {
+	z-index: 9;
+}
 #page1 {
-	z-index: 3;
+	z-index: 8;
 }
 #page2 {
-	z-index: 2;
+	z-index: 7;
 }
 #page3 {
-	z-index: 1;
+	z-index: 6;
 }
-#checkbox-cover:checked ~ .book {
+#page4 {
+	z-index: 5;
+}
+#page5 {
+	z-index: 4;
+}
+#page6 {
+	z-index: 3;
+}
+#page7 {
+	z-index: 2;
+}
+#checkbox-page0:checked ~ .book {
 	transform: translateX(200px);
 }
-#checkbox-cover:checked ~ .book .cover {
+#checkbox-page0:checked ~ .book .cover {
 	transition: transform 1.5s, z-index 0.5s 0.5s;
 	transform: rotateY(-180deg);
 	z-index: 1;
-  p{
-    transition: display 1.5s;
-    display: none;
-  }
 }
-#checkbox-cover:checked ~ .book .page {
+	#checkbox-page0:checked ~ .book .cover p{
+		transition: opacity 0.1s 0.4s;
+		opacity: 0;
+	}
+#checkbox-page0:checked ~ .book .page {
 	box-shadow: 0 0 3px rgb(99, 98, 98);
 }
-#checkbox-page1:checked ~ .book #page1 {
+#checkbox-page1:checked ~ .book #page0 {
 	transform: rotateY(-180deg);
 	z-index: 2;
 }
-#checkbox-page2:checked ~ .book #page2 {
+#checkbox-page1:checked ~ .book #page1 {
 	transform: rotateY(-180deg);
 	z-index: 3;
+}
+#checkbox-page2:checked ~ .book #page2 {
+	transform: rotateY(-180deg);
+	z-index: 4;
+}
+#checkbox-page3:checked ~ .book #page3 {
+	transform: rotateY(-180deg);
+	z-index: 5;
+}
+#checkbox-page4:checked ~ .book #page4 {
+	transform: rotateY(-180deg);
+	z-index: 6;
+}
+#checkbox-page5:checked ~ .book #page5 {
+	transform: rotateY(-180deg);
+	z-index: 7;
+}
+#checkbox-page6:checked ~ .book #page6 {
+	transform: rotateY(-180deg);
+	z-index: 8;
+}
+#checkbox-page7:checked ~ .book #page7 {
+	transform: rotateY(-180deg);
+	z-index: 9;
+}
+
+#page4 .linkInternet{
+	display: none;
+}
+#page7 .linkGithub{
+	display: none;
+}
+.dernierePage{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: "monteCarlo";
+gap: 25px;
+.aurevoir1, .aurevoir2,.aurevoir3{
+	display: flex;
+	text-align: center;
+	font-size: 35px;
+	word-spacing: 7px;
+	color: black;
+	}
+
 }
