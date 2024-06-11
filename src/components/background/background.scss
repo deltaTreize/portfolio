@@ -1,29 +1,33 @@
-
-.background{
-  position: absolute;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1px;
-  width: 120vw;
-  left: -40px;
-  top: -20px;
-  background: #000000;
-  .cercle{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    background: blue;
-    box-shadow: 0 0 65px 65px blue;
-  }
-    .polygone{
-      box-sizing: border-box;
-      display: flex;
-      width: 80px;
-      height: 80px;
-      background: #111111;
-      z-index: 1;
-    }
-  }
+.background {
+	position: absolute;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.2vw;
+	width: 100%;
+	background: #000000;
+	&-line {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+    height: 8.4vh;
+		gap: 0.2vw;
+	}
+	.cercle {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		position: absolute;
+		background: blue;
+		box-shadow: 0 0 65px 65px blue;
+	}
+	.polygone {
+		box-sizing: border-box;
+		display: flex;
+		height: 100%;
+		aspect-ratio: 1/1;
+		background: #111111;
+		z-index: 1;
+	}
+}
