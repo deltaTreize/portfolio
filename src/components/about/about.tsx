@@ -1,12 +1,14 @@
 import React from "react";
-import "./aboutPage.scss";
+import "./about.scss";
 
- function AboutPage() {
+ export function About() {
 
 	return (
 			<div className="about" id="about">
+				<div className="entete">
 					<h2>LEBLOND Ludovic</h2>
 				<img src="./assets/moi.png" alt="moi" />
+				</div>
 					<p>
 						Depuis que j'ai 6 ans, je suis passionné d'informatique.
 						J'ai toujours voulu travailler dans le monde de
@@ -21,5 +23,3 @@ import "./aboutPage.scss";
 
 	);
 }
-
-export default AboutPage;

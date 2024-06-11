@@ -1,0 +1,33 @@
+.about{
+  box-sizing: border-box;
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  transform: translate(-50%, 0);
+  width: 20vw;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  z-index: 100;
+  pointer-events: none;
+  .entete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+      font-size: 27px;
+    }
+  img{
+    border-radius: 15px;
+    margin: 5px 0;
+    width: 40%;
+}
+}
+  p{
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
