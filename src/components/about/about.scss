@@ -4,7 +4,7 @@
   top: 10%;
   left: 13%;
   transform: translate(-50%, 0);
-  width: 20vw;
+  width: 25vw;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -12,22 +12,50 @@
   color: #fff;
   z-index: 100;
   pointer-events: none;
+  @media (max-width: 768px){
+    position: relative;
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
   .entete{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 768px){
+      position: relative;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+      width: 100%;
+    }
+  
     h2{
-      font-size: 27px;
+      font-size: 24px;
+      @media (max-width: 425px){
+        font-size: 20px;
+        text-align: center;
+      }
+  
     }
   img{
     border-radius: 15px;
     margin: 5px 0;
     width: 60%;
+    @media (max-width: 768px){
+      width: 10%;
+    }
+
 }
 }
   p{
     padding: 0 10px;
-    font-size: 20px;
+    font-size: 1.4vw;
     line-height: 28px;
+    @media (max-width: 768px){
+      font-size: 3vw;
+      text-align: center;
+    }
+
   }
 }

@@ -13,8 +13,8 @@ export function Technos() {
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
 						y="0px"
-						width="100"
-						height="100"
+						width="100%"
+						height="100%"
 						viewBox="0 0 48 48"
 					>
 						<path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
@@ -35,8 +35,8 @@ export function Technos() {
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
 						y="0px"
-						width="100"
-						height="100"
+						width="100%"
+						height="100%"
 						viewBox="0 0 48 48"
 					>
 						<path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
@@ -57,8 +57,8 @@ export function Technos() {
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
 						y="0px"
-						width="100"
-						height="100"
+						width="100%"
+						height="100%"
 						viewBox="0 0 48 48"
 					>
 						<path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
@@ -74,8 +74,8 @@ export function Technos() {
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
 						y="0px"
-						width="100"
-						height="100"
+						width="100%"
+						height="100%"
 						viewBox="0 0 48 48"
 					>
 						<rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect>
@@ -95,8 +95,8 @@ export function Technos() {
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
 						y="0px"
-						width="100"
-						height="100"
+						width="100%"
+						height="100%"
 						viewBox="0 0 48 48"
 					>
 						<path
@@ -120,8 +120,8 @@ export function Technos() {
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
 						y="0px"
-						width="100"
-						height="100"
+						width="100%"
+						height="100%"
 						viewBox="0 0 48 48"
 					>
 						<path
@@ -152,8 +152,8 @@ export function Technos() {
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
 						y="0px"
-						width="100"
-						height="100"
+						width="100%"
+						height="100%"
 						viewBox="0 0 48 48"
 					>
 						<path
@@ -170,8 +170,8 @@ export function Technos() {
 				<li>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						width="64"
-						height="64"
+						width="100%"
+						height="100%"
 						viewBox="0 0 32 32"
 					>
 						<path
@@ -194,8 +194,8 @@ export function Technos() {
 						xmlns="http://www.w3.org/2000/svg"
 						x="0px"
 						y="0px"
-						width="100"
-						height="100"
+						width="100%"
+						height="100%"
 						viewBox="0 0 48 48"
 					>
 						<path
@@ -216,8 +216,8 @@ export function Technos() {
 				<li>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						width="120"
-						height="60"
+						width="100%"
+						height="100%"
 						viewBox="0 0 90 45"
 						stroke="#fff"
 						fill="#fff"
