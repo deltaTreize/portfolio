@@ -6,6 +6,7 @@ export function Menu() {
 
 	return (
 		<div className="menu-wrapper">
+			<h2>PROJETS</h2>
 			<ul className={`menu ${isActive ? "active" : ""}`}>
 				<div className="menuToggle" onClick={() => setIsActive(!isActive)}>
 					{!isActive && <p>open</p>}

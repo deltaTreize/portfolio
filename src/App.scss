@@ -1,0 +1,16 @@
+#root{
+  position: relative;
+}
+
+h1{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  background: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 20px;
+  z-index: 1000;
+}

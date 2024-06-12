@@ -6,7 +6,7 @@ import "./about.scss";
 	return (
 			<div className="about" id="about">
 				<div className="entete">
-					<h2>LEBLOND Ludovic</h2>
+					<h2>A propos de moi</h2>
 				<img src="./assets/moi.png" alt="moi" />
 				</div>
 					<p>
