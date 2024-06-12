@@ -3,9 +3,9 @@
 	top: 0;
 	overflow: hidden;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
-	gap: 0.2vw;
+	row-gap: 0.2vw;
 	width: 100%;
 	height: 100%;
 	background: #000000;
@@ -14,7 +14,7 @@
 		flex-wrap: nowrap;
 		width: 100%;
     height: 8.4vh;
-		gap: 0.2vw;
+		column-gap: 0.2vw;
 	}
 	.cercle {
 		width: 50px;
