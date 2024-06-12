@@ -2,9 +2,19 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	width: 100vw;
 	height: 100vh;
 	background-color: grey;
+	h2{
+		color: #fff;
+		font-size: 1.5rem;
+		background: none;
+		box-sizing: border-box;
+		z-index: 1000;
+    position: absolute;
+    top: 10%;
+	}
 	.menu {
 		position: relative;
 		display: flex;
@@ -90,7 +100,7 @@
 
 .menu.active {
 	li {
-		transform: rotate(calc(360deg / 6 * var(--i)));
+		transform: rotate(calc(360deg / 6 * var(--i))) translateX(40px);
 		&:hover {
 			.title {
 				color: var(--color);

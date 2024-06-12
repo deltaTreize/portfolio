@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-.navbar{
+.footer{
   box-sizing: border-box;
   z-index: 100;
   width: 100vw;
@@ -9,6 +9,8 @@
   padding: 0 15px;
   display: flex;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
   .nav{
     display: flex;
     height: 100%;
