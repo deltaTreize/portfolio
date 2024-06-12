@@ -21,8 +21,8 @@ export function Menu() {
 						href="https://deltatreize.github.io/projet3/"
 						aria-label="lien vers projet booki.com"
 					>
+					<p>booki.com</p>
 					</a>
-					<p className="title">booki.com</p>
 				</li>
 				<li style={{ '--i': 1, '--color': 'green', '--img': 'url("/assets/ohmyfood.png")' } as React.CSSProperties} className="rotate">
 					{" "}
@@ -33,8 +33,8 @@ export function Menu() {
 						aria-label="lien vers projet ohmyfood.com"
 
 					>
+					<p className="title">OhMyFood</p>
 					</a>
-					<p className="title">OhMyFood.com</p>
 				</li>
 				<li style={{ '--i': 2, '--color': 'yellow', '--img': 'url("/assets/sophiebuel.png")' } as React.CSSProperties}>
 					{" "}
@@ -45,8 +45,8 @@ export function Menu() {
 						aria-label="lien vers projet sophiebuel.com"
 
 					>
-					</a>
 					<p className="title">Sophie Buel</p>
+					</a>
 				</li>
 				<li style={{ '--i': 3, '--color': 'blue', '--img': 'url("/assets/kasa.png")' } as React.CSSProperties} className="rotate">
 					{" "}
@@ -57,8 +57,8 @@ export function Menu() {
 						aria-label="lien vers projet kasa.com"
 
 					>
-					</a>
 					<p className="title">Kasa.com</p>
+					</a>
 				</li>
 				<li style={{ '--i': 4, '--color': 'purple', '--img': 'url("/assets/argentbank.png")' } as React.CSSProperties}>
 					{" "}
@@ -69,8 +69,8 @@ export function Menu() {
 						aria-label="lien vers projet ludobank.com"
 
 					>
-					</a>
 					<p className="title">LudoBank</p>
+					</a>
 				</li>
 				<li style={{ '--i': 5, '--color': 'skyblue', '--img': 'url("/assets/harryPotter.png")' } as React.CSSProperties} className="rotate">
 					{" "}
@@ -81,8 +81,8 @@ export function Menu() {
 						aria-label="lien vers projet harrypotter"
 
 					>
-					</a>
 					<p className="title">Harry Potter</p>
+					</a>
 				</li>
 			</ul>
 		</div>

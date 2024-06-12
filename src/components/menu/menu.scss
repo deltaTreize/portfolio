@@ -6,81 +6,138 @@
 	width: 100vw;
 	height: 100vh;
 	background-color: grey;
-	h2{
+	@media (max-width: 768px) {
+		height: 50vh;
+	}
+	@media (max-width: 425px) {
+		height: 40vh;
+	}
+
+	h2 {
 		color: #fff;
 		font-size: 1.5rem;
 		background: none;
 		box-sizing: border-box;
 		z-index: 1000;
-    position: absolute;
-    top: 10%;
+		position: absolute;
+		top: 10%;
+		@media (max-width: 768px) {
+			position: relative;
+			top: 0;
+		}
 	}
+
 	.menu {
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 600px;
-		height: 600px;
+		width: 80vw;
+		max-width: 600px;
+		height: 80vw;
+		max-height: 600px;
 		padding: 0;
 		margin: 0;
-		.title {
-			color: transparent;
-		}
+
+		// .title {
+		// 	color: transparent;
+		// }
+
 		li {
 			position: absolute;
-			left: 0;
+			left: 45%;
+			top: 45%;
+			transform-origin: center;
 			list-style: none;
-			transform-origin: 300px;
 			transition: 0.5s;
 			transition-delay: calc(0.1s * var(--i));
-			transform: rotate(0deg) translateX(270px);
+			transform: rotate(0deg) translateX(0);
 			z-index: 100;
+			@media (max-width: 768px) {
+				left: 45%;
+				top: 42%;
+			}
 			a {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 60px;
-				height: 60px;
+				width: 10vw;
+				max-width: 60px;
+				height: 10vw;
+				max-height: 60px;
 				font-size: 1.5em;
 				color: transparent;
 				border-radius: 50%;
 				transform: rotate(calc(360deg / -6 * var(--i)));
 				transition: 1s;
 				transition-delay: 0.5s;
+				p{
+					opacity: 0;
+					display: flex;
+					position: absolute;
+					justify-content: center;
+					align-items: center;
+					top: -10px;
+					width: 9vw;
+					max-width: 140px;
+					height: 2vw;
+					bottom: 0;
+					transform-origin: 0;
+					transform: rotate(calc(var(--i) * 360deg));
+					font-size: 1.5vw;
+					color: #000;
+					background: #fff;
+					margin: 0;	
+					transition: display 0.5s;
+				}
+
 				&::before {
 					content: "";
 					position: absolute;
-					top: -25px;
-					width: 60px;
-					height: 2px;
+					top: -2.5vw;
+					width: 7vw;
+					max-width: 60px;
+					height: 0.2vw;
+					max-height: 2px;
 					background-color: var(--color);
 					border-radius: 2px;
 					transform: rotate(calc(var(--i) * 180deg)) translate(0.25px);
 					transition: height 0.5s, width 0.5s, transform 0.5s;
 					transition-delay: 0s, 0s, 0s;
 				}
+
 				&::after {
 					content: "";
 					position: absolute;
-					left: 50px;
-					width: 60px;
-					height: 2px;
+					left: 45px;
+					width: 10vw;
+					max-width: 60px;
+					height: 0.2vw;
+					max-height: 2px;
 					background: var(--color);
 					border-radius: 2px;
 					z-index: -1;
-					transform: rotate(calc(var(--i) * 0deg)) translate(50px, 0px);
+					transform: rotate(calc(var(--i) * 0deg)) translate(5vw, 0px);
 					transition: 0.5s;
 					transition-delay: 0.5s;
+					@media (max-width: 1024px) {
+						left: 55px;
+					}
+					@media (max-width: 425px) {
+						left: 40px;
+					}
 				}
 			}
 		}
+
 		.menuToggle {
 			position: absolute;
 			top: 50%;
-			transform: translateY(-100%);
-			width: 60px;
-			height: 60px;
+			transform: translateY(-50%);
+			width: 10vw;
+			max-width: 60px;
+			height: 10vw;
+			max-height: 60px;
 			color: #fff;
 			display: flex;
 			justify-content: center;
@@ -88,11 +145,20 @@
 			z-index: 10000;
 			border-radius: 50%;
 			cursor: pointer;
-			font-size: 2em;
+			font-size: 2.5vw;
 			transition: transform 1.5s;
+			@media (max-width: 700px) {
+				transform: translate(7%, -50%);
+			}
+			@media (max-width: 425px) {
+				transform: translate(10%, -65%);
+			}
 			&:hover {
 				color: green;
 				transition: transform 1.5s, color 0.5s;
+			}
+			p {
+				margin: 0;
 			}
 		}
 	}
@@ -100,20 +166,33 @@
 
 .menu.active {
 	li {
-		transform: rotate(calc(360deg / 6 * var(--i))) translateX(40px);
-		&:hover {
-			.title {
-				color: var(--color);
-			}
+		transform: rotate(calc(360deg / 6 * var(--i))) translateX(calc(13vw));
+		@media (max-width: 768px) {
+			transform: rotate(calc(360deg / 6 * var(--i))) translateX(calc(17vw));
 		}
+		&:hover .title {
+			color: var(--color);
+		}
+
 		a {
 			color: var(--color);
+			p {
+				opacity: 1;
+				transition: opacity 1s;
+				transition-delay: 1.5s;
+				@media (max-width: 768px) {
+					top: -7%;
+				}
+			}
 			&::after {
 				display: none;
 			}
+
 			&::before {
-				width: 150px;
-				height: 150px;
+				width: 10vw;
+				max-width: 150px;
+				height: 10vw;
+				max-height: 150px;
 				border: 2px solid var(--color);
 				box-sizing: border-box;
 				background-image: var(--img);
@@ -123,26 +202,37 @@
 				transform: rotate(calc(var(--i) * 180deg)) translate(0px, 0px);
 				transition: transform 0.5s, height 0.5s, width 0.5s;
 				transition-delay: 1s, 1.5s, 1.5s;
+				@media (max-width: 768px) {
+					width: 13vw;
+					height: 13vw;
+	
+				}
+		
 			}
 		}
 	}
+
 	.menuToggle {
-		transform: rotate(360deg);
+		transform: rotate(360deg) translateY(-50%);
+
 		&:hover {
 			color: red;
 			transition: transform 1.5s, color 0.5s;
 		}
 	}
-	.title {
-		position: absolute;
-		width: 200px;
-		top: 0;
-		bottom: 0;
-		transform-origin: 30px;
-		transform: rotate(calc(var(--i) * 300deg)) translate(-40px, -77px);
-		font-size: 20px;
-		color: #fff;
-	}
+
+	// .title {
+	// 	position: absolute;
+	// 	width: 33vw;
+	// 	max-width: 200px;
+	// 	top: 30%;
+	// 	bottom: 0;
+	// 	transform-origin: 0;
+	// 	transform: rotate(calc(var(--i) * 300deg)) translate(-2.5vw, -6vw);
+	// 	font-size: 1.25rem;
+	// 	color: #fff;
+	// }
+
 	.rotate a::before {
 		transform: rotate(360deg);
 	}
