@@ -8,11 +8,11 @@ export function Menu() {
 		<div className="menu-wrapper">
 			<h2>PROJETS</h2>
 			<ul className={`menu ${isActive ? "active" : ""}`}>
-				<div className="menuToggle" onClick={() => setIsActive(!isActive)}>
+				<li className="menuToggle" onClick={() => setIsActive(!isActive)}>
 					{!isActive && <p>open</p>}
 					{isActive && <p>close</p>}
 					
-				</div>
+				</li>
 				<li style={{ '--i': 0, '--color': 'red', '--img': 'url("/assets/booki.png")' } as React.CSSProperties}>
 					{" "}
 					<a
