@@ -13,7 +13,7 @@ export function Menu() {
 					{isActive && <p>close</p>}
 					
 				</li>
-				<li style={{ '--i': 0, '--color': 'red', '--img': 'url("/assets/booki.png")' } as React.CSSProperties}>
+				<li style={{ '--i': 0, '--color': 'red', '--img': 'url("/assets/booki.webp")' } as React.CSSProperties}>
 					{" "}
 					<a
 						target="_blank"
@@ -21,10 +21,10 @@ export function Menu() {
 						href="https://deltatreize.github.io/projet3/"
 						aria-label="lien vers projet booki.com"
 					>
-					<p>booki.com</p>
+					<p className="title">booki.com</p>
 					</a>
 				</li>
-				<li style={{ '--i': 1, '--color': 'green', '--img': 'url("/assets/ohmyfood.png")' } as React.CSSProperties} className="rotate">
+				<li style={{ '--i': 1, '--color': 'green', '--img': 'url("/assets/ohmyfood.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
 					<a
 						target="_blank"
@@ -36,7 +36,7 @@ export function Menu() {
 					<p className="title">OhMyFood</p>
 					</a>
 				</li>
-				<li style={{ '--i': 2, '--color': 'yellow', '--img': 'url("/assets/sophiebuel.png")' } as React.CSSProperties}>
+				<li style={{ '--i': 2, '--color': 'yellow', '--img': 'url("/assets/sophiebuel.webp")' } as React.CSSProperties}>
 					{" "}
 					<a
 						target="_blank"
@@ -48,7 +48,7 @@ export function Menu() {
 					<p className="title">Sophie Buel</p>
 					</a>
 				</li>
-				<li style={{ '--i': 3, '--color': 'blue', '--img': 'url("/assets/kasa.png")' } as React.CSSProperties} className="rotate">
+				<li style={{ '--i': 3, '--color': 'blue', '--img': 'url("/assets/kasa.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
 					<a
 						target="_blank"
@@ -60,7 +60,7 @@ export function Menu() {
 					<p className="title">Kasa.com</p>
 					</a>
 				</li>
-				<li style={{ '--i': 4, '--color': 'purple', '--img': 'url("/assets/argentbank.png")' } as React.CSSProperties}>
+				<li style={{ '--i': 4, '--color': 'purple', '--img': 'url("/assets/argentbank.webp")' } as React.CSSProperties}>
 					{" "}
 					<a
 						target="_blank"
@@ -72,7 +72,7 @@ export function Menu() {
 					<p className="title">LudoBank</p>
 					</a>
 				</li>
-				<li style={{ '--i': 5, '--color': 'skyblue', '--img': 'url("/assets/harryPotter.png")' } as React.CSSProperties} className="rotate">
+				<li style={{ '--i': 5, '--color': 'skyblue', '--img': 'url("/assets/harryPotter.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
 					<a
 						target="_blank"
