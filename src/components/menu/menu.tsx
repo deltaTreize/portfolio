@@ -34,7 +34,7 @@ export function Menu() {
 					<p className="title">OhMyFood</p>
 					</a>
 				</li>
-				<li style={{ '--i': 2, '--color': 'yellow', '--img': 'url("/assets/sophieBuel.png")' } as React.CSSProperties}>
+				<li style={{ '--i': 2, '--color': 'yellow', '--img': 'url("/assets/sophieBuel.webp")' } as React.CSSProperties}>
 					{" "}
 					<a
 						target="_blank"
