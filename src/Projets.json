@@ -1,0 +1,96 @@
+[
+	{
+		"id": 1,
+		"name": "booki.com",
+		"picture": "./assets/booki-projet.webp",
+		"code": "https://github.com/deltaTreize/projet3",
+		"site": "https://deltatreize.github.io/projet3/",
+		"text": "Ce projet avait pour but de travailler le CSS et d'utiliser Figma (une première pour moi). Avec une maquette Mobile et Desktop, j'ai été dans l'obligation de faire le site entièrement responsive et en accord avec la maquette.",
+		"competences": [
+			"utiliser FIGMA pour lire et découper une maquette",
+			"créer un site responsive pour toutes tailles d'écrans"
+		],
+		"ameliorations": [
+			"filtrage grace au input location",
+			"filtrage grace aux filtres",
+			"créer les pages pour tous les logements",
+			"utiliser react avec react-router"
+		],
+		"techno": ["HTML", "CSS", "Figma"],
+		"color": "#7451eb"
+	},
+	{
+		"id": 2,
+		"name": "ohmyfood.com",
+		"picture": "./assets/ohmyfood-projet.webp",
+		"code": "https://github.com/deltaTreize/projet4",
+		"site": "https://deltatreize.github.io/projet4/homePage.html",
+		"text": "Ce projet avait pour but de créer un site de plusieurs pages et d'apprendre SCSS. Avec interdiction d'utiliser JavaScript.",
+		"competences": ["SCSS"],
+		"ameliorations": [
+			"créer un DB pour les infos de tous les restaurants",
+			"filtrage grace au input location"
+		],
+		"techno": ["HTML", "SCSS", "Figma"],
+		"color": "#7451eb"
+	},
+	{
+		"id": 3,
+		"name": "sophieBuel.com",
+		"picture": "./assets/sophieBuel-projet.webp",
+		"code": "https://github.com/deltaTreize/projet6",
+		"text": "Premier projet de ma formation dans lequel j'utilise le langage JavaScript. Pour ce projet j'utilise une DataBase SQLITE (c'est pour ça que je ne peux pas utiliser vercel pour le lien du site). Cette DataBase ainsi que le Back-End était fourni, j'ai juste utilisé les routes pré-codées dans le Back-End.",
+		"competences": ["YAML", "SWAGGER", "FETCH (JS)", "création de modal"],
+		"ameliorations": ["rendre utilisable le formulaire de contact"],
+		"techno": [
+			"HTML",
+			"CSS",
+			"JS",
+			"YAML",
+			"EXPRESS",
+			"SQLite",
+			"Swagger",
+			"Figma"
+		],
+		"color": "#7451eb"
+	},
+	{
+		"id": 4,
+		"name": "Kasa.com",
+		"picture": "./assets/kasa-projet.webp",
+		"code": "https://github.com/deltaTreize/p8_kasa",
+		"site": "https://p8-kasa-umber.vercel.app/",
+		"text": "Premier projet de ma formation dans lequel j'utilise REACT et première fois pour moi que j'utilise REACT-ROUTER.",
+		"competences": ["REACT-ROUTER"],
+		"ameliorations": [
+			"mettre en place un système pour filtrer par localisation ou par tag"
+		],
+		"techno": ["HTML", "SCSS", "JSX", "REACT"],
+		"color": "#7451eb"
+	},
+	{
+		"id": 5,
+		"name": "LudoBank.com",
+		"picture": "./assets/argentbank-projet.webp",
+		"code": "https://github.com/deltaTreize/p11",
+		"site": "https://P11-three.vercel.app/",
+		"text": "Ce projet a pour but de simuler une application bancaire. Ayant envie de pousser plus loin le projet, j'ai effectué beaucoup d'améliorations personnelles.",
+		"competences": [
+			"L'utilisation de REDUX est une grande première pour moi",
+			"J'ai appris TYPESCRIPT sur ce projet",
+			"Création de routes dans mon Back-End avec EXPRESS"
+		],
+		"techno": ["HTML", "SCSS", "TSX", "REACT", "REDUX", "EXPRESS", "MONGOOSE"],
+		"color": "red"
+	},
+	{
+		"id": 6,
+		"name": "HarryPotter.com",
+		"picture": "./assets/harryPotter-projet.webp",
+		"site": "https://harry-potter-react-three.vercel.app/",
+		"text": "Ce site est mon site personnel. J'ai commencé ce projet durant ma période d'apprentissage en autodidacte avant ma formation au sein de OpenClassroom. J'y apporte des améliorations régulièrement pendant mon temps libre.",
+		"competences": ["Ce projet est mon premier projet REACT"],
+		"techno": ["HTML", "SCSS", "JSX", "REACT"],
+		"color": "red"
+	}
+]

@@ -1,22 +1,25 @@
-import React from "react";
+import React, { StrictMode } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Background } from "./components/background/background.tsx";
 import { Footer } from "./components/footer/footer.tsx";
-import { Menu } from "./components/menu/menu.tsx";
-import {About} from "./components/about/about.tsx";
+import { Acceuil } from "./pages/acceuil/acceuil.tsx";
 
 import "./App.scss";
-import { Technos } from "./components/technos/technos.tsx";
+import { Projet } from "./pages/projet/projet.tsx";
 
 function App() {
 	return (
-    <>
-				<h1>LEBLOND Ludovic</h1>
+		<StrictMode>
+			<BrowserRouter>
+				
 				<Background />
-				<Menu />
-				<About />
-				<Technos />
+				<Routes>
+					<Route path="/" element={<Acceuil />} />
+					<Route path="/:projetName" element={<Projet />} />
+				</Routes>
 				<Footer />
-    </>
+			</BrowserRouter>
+		</StrictMode>
 	);
 }
 

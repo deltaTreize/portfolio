@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./menu.scss";
 
 export function Menu() {
@@ -12,71 +13,59 @@ export function Menu() {
 					{!isActive && <p>open</p>}
 					{isActive && <p>close</p>}
 				</li>
-				<li style={{ '--i': 0, '--color': 'red', '--img': 'url("/assets/booki.webp")' } as React.CSSProperties}>
+				<li style={{ '--i': 0, '--color': '#7451eb', '--img': 'url("/assets/booki.webp")' } as React.CSSProperties}>
 					{" "}
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://deltatreize.github.io/projet3/"
+					<Link
+						to={"/booki.com"}
 						aria-label="lien vers projet booki.com"
 					>
 					<p className="title">booki.com</p>
-					</a>
+					</Link>
 				</li>
-				<li style={{ '--i': 1, '--color': 'green', '--img': 'url("/assets/ohmyfood.webp")' } as React.CSSProperties} className="rotate">
+				<li style={{ '--i': 1, '--color': '#7451eb', '--img': 'url("/assets/ohmyfood.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://deltatreize.github.io/projet4/homePage.html"
+					<Link
+						to={"/ohmyfood.com"}
 						aria-label="lien vers projet ohmyfood.com"
 					>
 					<p className="title">OhMyFood</p>
-					</a>
+					</Link>
 				</li>
-				<li style={{ '--i': 2, '--color': 'yellow', '--img': 'url("/assets/sophieBuel.webp")' } as React.CSSProperties}>
+				<li style={{ '--i': 2, '--color': '#7451eb', '--img': 'url("/assets/sophieBuel.webp")' } as React.CSSProperties}>
 					{" "}
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://deltatreize.github.io/projet6/FrontEnd/index.html"
+					<Link
+						to={"/sophieBuel.com"}
 						aria-label="lien vers projet sophiebuel.com"
 					>
 					<p className="title">Sophie Buel</p>
-					</a>
+					</Link>
 				</li>
-				<li style={{ '--i': 3, '--color': 'blue', '--img': 'url("/assets/kasa.webp")' } as React.CSSProperties} className="rotate">
+				<li style={{ '--i': 3, '--color': '#7451eb', '--img': 'url("/assets/kasa.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://p8-kasa-umber.vercel.app/"
+					<Link
+						to={"/Kasa.com"}
 						aria-label="lien vers projet kasa.com"
 					>
 					<p className="title">Kasa.com</p>
-					</a>
+					</Link>
 				</li>
-				<li style={{ '--i': 4, '--color': 'purple', '--img': 'url("/assets/argentbank.webp")' } as React.CSSProperties}>
+				<li style={{ '--i': 4, '--color': 'red', '--img': 'url("/assets/argentbank.webp")' } as React.CSSProperties}>
 					{" "}
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://p11-three.vercel.app/"
+					<Link
+						to={"/LudoBank.com"}
 						aria-label="lien vers projet ludobank.com"
 					>
 					<p className="title">LudoBank</p>
-					</a>
+					</Link>
 				</li>
-				<li style={{ '--i': 5, '--color': 'skyblue', '--img': 'url("/assets/harryPotter.webp")' } as React.CSSProperties} className="rotate">
+				<li style={{ '--i': 5, '--color': 'red', '--img': 'url("/assets/harryPotter.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
-					<a
-						target="_blank"
-						rel="noreferrer"
-						href="https://harry-potter-react-three.vercel.app/"
+					<Link
+						to={"/HarryPotter.com"}
 						aria-label="lien vers projet harrypotter"
 					>
 					<p className="title">Harry Potter</p>
-					</a>
+					</Link>
 				</li>
 			</ul>
 		</div>
