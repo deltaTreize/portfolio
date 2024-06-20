@@ -17,7 +17,7 @@ import "./about.scss";
 						lance dans l’apprentissage du développement WEB. Après 4
 						mois intensif d’apprentissage en autodidacte, j’intègre
 						la formation 'Développeur/intégrateur WEB' au sein de
-						l’école en ligne OpenClassroom.
+						l’école en ligne OpenClassrooms.
 					</p>
 				</div>
 

@@ -11,7 +11,6 @@ function App() {
 	return (
 		<StrictMode>
 			<BrowserRouter>
-				
 				<Background />
 				<Routes>
 					<Route path="/" element={<Acceuil />} />
