@@ -10,7 +10,7 @@ import "./about.scss";
 				<img src="./assets/moi.webp" alt="moi" />
 				</div>
 					<p>
-						J'ai toujours voulu travailler dans le monde de
+						J'ai toujours voulu travailler dans
 						l'informatique et plus particulièrement dans le monde de
 						la programmation. Et c’est ainsi, qu’à 34ans, je me
 						lance dans l’apprentissage du développement WEB. Après 4
