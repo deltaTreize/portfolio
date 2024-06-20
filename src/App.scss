@@ -21,4 +21,8 @@ h1 {
 	@media (max-width: 767px) {
 		position: relative;
 	}
+
+	@media (max-width: 425px) {
+		font-size: 30px;
+	}
 }

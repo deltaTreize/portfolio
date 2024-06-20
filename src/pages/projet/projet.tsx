@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import projets from "../../Projets.json";
 import "./projet.scss";
 
@@ -238,9 +238,9 @@ export function Projet() {
 							id="A"
 							gradientUnits="userSpaceOnUse"
 						>
-							<stop stop-color="#97d9f6" offset="0%" />
-							<stop stop-color="#0f80cc" offset="92.024%" />
-							<stop stop-color="#0f80cc" offset="100%" />
+							<stop stopColor="#97d9f6" offset="0%" />
+							<stop stopColor="#0f80cc" offset="92.024%" />
+							<stop stopColor="#0f80cc" offset="100%" />
 						</linearGradient>
 					</defs>
 					<path
@@ -330,6 +330,7 @@ export function Projet() {
 
 	return (
 		<div className="projet">
+			<Link to="/"><i className="fa-solid fa-arrow-left" style={ {'--color': `${projet?.color}`} as React.CSSProperties}></i></Link>
 			<h1 style={{ color: projet?.color }}>{projet?.name}</h1>
 			<div className="wrapper-img">
 				<nav className="wrapper-img-nav">

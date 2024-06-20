@@ -17,7 +17,24 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-
+	}
+	.fa-arrow-left{
+		position: absolute;
+		top: 45px;
+		left: 5vw;
+		transform: translate(-50%, -50%);
+		z-index: 100;
+		color: aliceblue;
+		font-size: 35px;
+		cursor: pointer;
+		pointer-events: all;
+		&:hover{
+			color: var(--color);
+		}
+		@media (max-width: 425px) {
+			font-size: 30px;
+		}
+	
 	}
 	h1 {
 		top: 0;
