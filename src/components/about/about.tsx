@@ -7,7 +7,7 @@ import "./about.scss";
 			<div className="about" id="about">
 				<div className="entete">
 					<h2>A propos de moi</h2>
-				<img src="./assets/moi-320.webp" alt="moi" srcSet="./assets/moi-320.webp 320w, ./assets/moi-768.webp 768w" />
+				<img src="./assets/moi.webp" alt="moi" />
 				</div>
 					<p>
 						J'ai toujours voulu travailler dans le monde de
