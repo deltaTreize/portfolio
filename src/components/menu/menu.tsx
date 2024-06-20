@@ -16,16 +16,16 @@ export function Menu() {
 				<li style={{ '--i': 0, '--color': '#7451eb', '--img': 'url("/assets/booki.webp")' } as React.CSSProperties}>
 					{" "}
 					<Link
-						to={"/booki.com"}
+						to={"/booki"}
 						aria-label="lien vers projet booki.com"
 					>
-					<p className="title">booki.com</p>
+					<p className="title">booki</p>
 					</Link>
 				</li>
 				<li style={{ '--i': 1, '--color': '#7451eb', '--img': 'url("/assets/ohmyfood.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
 					<Link
-						to={"/ohmyfood.com"}
+						to={"/ohmyfood"}
 						aria-label="lien vers projet ohmyfood.com"
 					>
 					<p className="title">OhMyFood</p>
@@ -34,7 +34,7 @@ export function Menu() {
 				<li style={{ '--i': 2, '--color': '#7451eb', '--img': 'url("/assets/sophieBuel.webp")' } as React.CSSProperties}>
 					{" "}
 					<Link
-						to={"/sophieBuel.com"}
+						to={"/sophieBuel"}
 						aria-label="lien vers projet sophiebuel.com"
 					>
 					<p className="title">Sophie Buel</p>
@@ -43,16 +43,16 @@ export function Menu() {
 				<li style={{ '--i': 3, '--color': '#7451eb', '--img': 'url("/assets/kasa.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
 					<Link
-						to={"/Kasa.com"}
+						to={"/Kasa"}
 						aria-label="lien vers projet kasa.com"
 					>
-					<p className="title">Kasa.com</p>
+					<p className="title">Kasa</p>
 					</Link>
 				</li>
-				<li style={{ '--i': 4, '--color': 'red', '--img': 'url("/assets/argentbank.webp")' } as React.CSSProperties}>
+				<li style={{ '--i': 4, '--color': 'red', '--img': 'url("/assets/ludobank.webp")' } as React.CSSProperties}>
 					{" "}
 					<Link
-						to={"/LudoBank.com"}
+						to={"/LudoBank"}
 						aria-label="lien vers projet ludobank.com"
 					>
 					<p className="title">LudoBank</p>
@@ -61,7 +61,7 @@ export function Menu() {
 				<li style={{ '--i': 5, '--color': 'red', '--img': 'url("/assets/harryPotter.webp")' } as React.CSSProperties} className="rotate">
 					{" "}
 					<Link
-						to={"/HarryPotter.com"}
+						to={"/HarryPotter"}
 						aria-label="lien vers projet harrypotter"
 					>
 					<p className="title">Harry Potter</p>
