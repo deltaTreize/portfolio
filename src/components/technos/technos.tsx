@@ -6,7 +6,6 @@ export function Technos() {
 	return (
 		<div className="technos">
 			<h2>TECHNOLOGIES</h2>
-
 			<ul>
 				<li>
 					<svg
