@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ludovic-leblond.com/</loc>
+    <loc>https://ludovic-leblond.fr/</loc>
     <lastmod>2024-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://ludovic-leblond.fr/LudoBank</loc>
+    <lastmod>2024-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ludovic-leblond.fr/HarryPotter</loc>
+    <lastmod>2024-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ludovic-leblond.fr/booki</loc>
+    <lastmod>2024-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ludovic-leblond.fr/ohmyfood</loc>
+    <lastmod>2024-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ludovic-leblond.fr/sophieBuel</loc>
+    <lastmod>2024-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://ludovic-leblond.fr/Kasa</loc>
+    <lastmod>2024-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>

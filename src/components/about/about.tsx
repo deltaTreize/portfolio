@@ -9,7 +9,7 @@ import "./about.scss";
 					<h2>A propos de moi</h2>
 				<img src="./assets/moi.webp" alt="moi" />
 				</div>
-					<p>
+					<h3>
 						J'ai toujours voulu travailler dans
 						l'informatique et plus particulièrement dans le monde de
 						la programmation. Et c’est ainsi, qu’à 34ans, je me
@@ -17,7 +17,7 @@ import "./about.scss";
 						mois intensif d’apprentissage en autodidacte, j’intègre
 						la formation 'Développeur/intégrateur WEB' au sein de
 						l’école en ligne OpenClassrooms.
-					</p>
+					</h3>
 				</div>
 
 	);

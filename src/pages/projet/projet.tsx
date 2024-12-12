@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import projets from "../../Projets.json";
 import "./projet.scss";
+import { Helmet } from "react-helmet-async";
 
 export function Projet() {
 	const { projetName } = useParams();
@@ -328,57 +329,124 @@ export function Projet() {
 		}
 	});
 
+	const jsonLd = {
+		"@context": "https://schema.org",
+		"@type": "CreativeWork",
+		name: projet?.name,
+		description: `Un projet de développement web utilisant des technologies comme ${projet?.techno.join(
+			", "
+		)}`,
+		url: `https://ludovic-leblond.fr/${projet?.name}`,
+		image: projet?.picture,
+		author: {
+			"@type": "Person",
+			name: "Ludovic LEBLOND",
+		},
+		mainEntityOfPage: `https://ludovic-leblond.fr/${projet?.name}`,
+	};
+	
+	if (!projet) {
+    return <div>Chargement...</div>;
+  }
+
+
 	return (
-		<div className="projet">
-			<Link to="/"><i className="fa-solid fa-arrow-left" style={ {'--color': `${projet?.color}`} as React.CSSProperties}></i></Link>
-			<h1 style={{ color: projet?.color }}>{projet?.name}</h1>
-			<div className="wrapper-img">
-				<nav className="wrapper-img-nav">
-					{projet?.code && (
-						<a href={projet?.code} target="_blank" rel="noreferrer">
-							<i className="fa-brands fa-github"></i>Code
-						</a>
-					)}
-					{projet?.site && (
-						<a href={projet?.site} target="_blank" rel="noreferrer">
-							<i className="fa-solid fa-globe"></i>Site
-						</a>
-					)}
-				</nav>
-				<img src={projet?.picture} alt="visuel du site" />
-			</div>
-			<div className="wrapper-projet">
-				<p className="wrapper-projet-text">{projet?.text}</p>
-				<div className="wrapper-projet-technos">
-					<ul>
-						{technos.map((techno, index) => (
-							<li key={index}>{techno}</li>
-						))}
-					</ul>
+		<>
+			<Helmet>
+				<title>{projet?.name} - Mon Portfolio</title>
+				<meta
+					name="description"
+					content={`Découvrez le projet ${
+						projet?.name
+					}, une réalisation utilisant les technologies suivantes : ${projet?.techno.join(
+						", "
+					)}`}
+				/>
+
+				{/* Open Graph */}
+				<meta property="og:title" content={projet?.name} />
+				<meta
+					property="og:description"
+					content={`Découvrez le projet ${
+						projet?.name
+					} réalisé avec des technologies comme ${projet?.techno.join(", ")}`}
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:image" content={projet?.picture} />
+				{/* Balises Twitter */}
+				<meta name="twitter:title" content={projet?.name} />
+				<meta
+					name="twitter:description"
+					content={`Découvrez le projet ${
+						projet?.name
+					} réalisé avec des technologies comme ${projet?.techno.join(", ")}`}
+				/>
+				<meta
+					name="twitter:image"
+					content={projet?.picture}
+				/>
+				<meta name="twitter:card" content="summary_large_image" />
+
+				{/* JSON-LD */}
+				<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+			</Helmet>
+
+			<div className="projet">
+				<Link to="/">
+					<i
+						className="fa-solid fa-arrow-left"
+						style={{ "--color": `${projet?.color}` } as React.CSSProperties}
+					></i>
+				</Link>
+				<h1 style={{ color: projet?.color }}>{projet?.name}</h1>
+				<div className="wrapper-img">
+					<nav className="wrapper-img-nav">
+						{projet?.code && (
+							<a href={projet?.code} target="_blank" rel="noreferrer">
+								<i className="fa-brands fa-github"></i>Code
+							</a>
+						)}
+						{projet?.site && (
+							<a href={projet?.site} target="_blank" rel="noreferrer">
+								<i className="fa-solid fa-globe"></i>Site
+							</a>
+						)}
+					</nav>
+					<img src={projet?.picture} alt="visuel du site" />
 				</div>
-				<div className="wrapper-projet-infos">
-					{projet?.ameliorations && (
-						<div className="wrapper-projet-infos-ameliorations">
-							<h3>Améliorations à faire</h3>
-							<ul>
-								{projet?.ameliorations?.map((amelioration, index) => (
-									<li key={index}>{amelioration}</li>
-								))}
-							</ul>
-						</div>
-					)}
-					{projet?.competences && (
-						<div className="wrapper-projet-infos-competences">
-							<h3>Compétences accises</h3>
-							<ul>
-								{projet?.competences?.map((competence, index) => (
-									<li key={index}>{competence}</li>
-								))}
-							</ul>
-						</div>
-					)}
+				<div className="wrapper-projet">
+					<h2 className="wrapper-projet-text">{projet?.text}</h2>
+					<div className="wrapper-projet-technos">
+						<ul>
+							{technos.map((techno, index) => (
+								<li key={index}>{techno}</li>
+							))}
+						</ul>
+					</div>
+					<div className="wrapper-projet-infos">
+						{projet?.ameliorations && (
+							<div className="wrapper-projet-infos-ameliorations">
+								<h3>Améliorations à faire</h3>
+								<ul>
+									{projet?.ameliorations?.map((amelioration, index) => (
+										<li key={index}>{amelioration}</li>
+									))}
+								</ul>
+							</div>
+						)}
+						{projet?.competences && (
+							<div className="wrapper-projet-infos-competences">
+								<h3>Compétences accises</h3>
+								<ul>
+									{projet?.competences?.map((competence, index) => (
+										<li key={index}>{competence}</li>
+									))}
+								</ul>
+							</div>
+						)}
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }
