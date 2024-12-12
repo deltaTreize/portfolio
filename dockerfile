@@ -1,5 +1,5 @@
 # Étape 1: Construire l'image de l'application React
-FROM node:18-alpine as build
+FROM node:18-alpine AS build
 
 # Définir le répertoire de travail dans le conteneur
 WORKDIR /app
