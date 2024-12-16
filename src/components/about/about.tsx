@@ -10,13 +10,7 @@ import "./about.scss";
 				<img src="./assets/moi.webp" alt="moi" />
 				</div>
 					<h3>
-						J'ai toujours voulu travailler dans
-						l'informatique et plus particulièrement dans le monde de
-						la programmation. Et c’est ainsi, qu’à 34ans, je me
-						lance dans l’apprentissage du développement WEB. Après 4
-						mois intensif d’apprentissage en autodidacte, j’intègre
-						la formation 'Développeur/intégrateur WEB' au sein de
-						l’école en ligne OpenClassrooms.
+					Développeur et intégrateur web passionné, diplômé de l'école OpenClassrooms en août 2024, je conçois des sites modernes, accessibles et performants. J'aime transformer des idées en expériences web uniques.
 					</h3>
 				</div>
 
