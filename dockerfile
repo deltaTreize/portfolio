@@ -23,7 +23,7 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 
 # Exposer le port 80 pour accéder à l'application
-EXPOSE 80
+EXPOSE 8080
 
 # Démarrer Nginx en mode non-détaché
 CMD ["nginx", "-g", "daemon off;"]
