@@ -13,13 +13,13 @@ export function Menu() {
 					{!isActive && <p>open</p>}
 					{isActive && <p>close</p>}
 				</li>
-				<li style={{ '--i': 0, '--color': '#7451eb', '--img': 'url("/assets/booki.webp")' } as React.CSSProperties}>
+				<li style={{ '--i': 0, '--color': 'red', '--img': 'url("/assets/candyshop.png")' } as React.CSSProperties}>
 					{" "}
 					<Link
-						to={"/booki"}
-						aria-label="lien vers projet booki.com"
+						to={"/candyshop-by-stess.fr"}
+						aria-label="lien vers projet candyshop-by-stess.fr"
 					>
-					<p className="title">booki</p>
+					<p className="title" style={{fontSize: "0.7vw"}}>Candyshop-by-stess.fr</p>
 					</Link>
 				</li>
 				<li style={{ '--i': 1, '--color': '#7451eb', '--img': 'url("/assets/ohmyfood.webp")' } as React.CSSProperties} className="rotate">

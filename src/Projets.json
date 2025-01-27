@@ -1,23 +1,18 @@
 [
 	{
 		"id": 1,
-		"name": "booki",
-		"picture": "./assets/booki-projet.webp",
-		"code": "https://github.com/deltaTreize/projet3",
-		"site": "https://deltatreize.github.io/projet3/",
-		"text": "Ce projet avait pour but de travailler le CSS et d'utiliser Figma (une première pour moi). Avec une maquette Mobile et Desktop, j'ai été dans l'obligation de faire le site entièrement responsive et en accord avec la maquette.",
+		"name": "candyshop-by-stess.fr",
+		"picture": "./assets/candyshop-projet.png",
+		"site": "https://candyshop-by-stess.fr",
+		"text": "Ce projet représente mon premier pas dans le développement professionnel. La cliente avait besoin d’un site e-commerce moderne pour commercialiser ses produits et accroître leur visibilité en ligne. J’ai conçu et développé à la fois le Front-End et le Back-End, intégrant des fonctionnalités essentielles telles que la gestion des produits, des clients, des commandes, ainsi que le système de paiement sécurisé via Stripe. Ce projet m’a offert l’opportunité de mettre en œuvre mes compétences en développement web tout en répondant aux attentes concrètes d’une entreprise.",
 		"competences": [
-			"utiliser FIGMA pour lire et découper une maquette",
-			"créer un site responsive pour toutes tailles d'écrans"
+			"Création et gestion d'une BD SQLITE.",
+			"déployer un site web sur mon propre serveur en utilisant Docker."
 		],
 		"ameliorations": [
-			"filtrage grace au input location",
-			"filtrage grace aux filtres",
-			"créer les pages pour tous les logements",
-			"utiliser react avec react-router"
 		],
-		"techno": ["HTML", "CSS", "Figma"],
-		"color": "#7451eb"
+		"techno": ["HTML", "SCSS", "TSX", "REACT", "EXPRESS", "SQLite", "Docker"],
+		"color": "red"
 	},
 	{
 		"id": 2,
@@ -39,7 +34,7 @@
 		"name": "sophieBuel",
 		"picture": "./assets/sophieBuel-projet.webp",
 		"code": "https://github.com/deltaTreize/projet6",
-		"text": "Premier projet de ma formation dans lequel j'utilise le langage JavaScript. Pour ce projet j'utilise une DataBase SQLITE (c'est pour ça que je ne peux pas utiliser vercel pour le lien du site). Cette DataBase ainsi que le Back-End était fourni, j'ai juste utilisé les routes pré-codées dans le Back-End.",
+		"text": "Premier projet de ma formation dans lequel j'utilise le langage JavaScript. Pour ce projet j'utilise une DataBase SQLITE (c'est pour ça que je ne peux pas utiliser vercel pour le lien du site). Cette DataBase ainsi que le Back-End étaient fournis, j'ai juste utilisé les routes pré-codées dans le Back-End.",
 		"competences": ["YAML", "SWAGGER", "FETCH (JS)", "création de modal"],
 		"ameliorations": ["rendre utilisable le formulaire de contact"],
 		"techno": [

@@ -327,6 +327,32 @@ export function Projet() {
 				</svg>
 			);
 		}
+		if (techno === "Docker") {
+			technos.push(
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="100%"
+					height="100%"
+					viewBox="0 0 32 32"
+					fill="none"
+				>
+					<circle cx="16" cy="16" r="14" fill="#1794D4" />
+					<path d="M18 7H16V9H18V7Z" fill="white" />
+					<path d="M10 10H12V12H10V10Z" fill="white" />
+					<path
+						d="M6.00155 16.9414C6.17244 19.8427 7.90027 24 14 24C20.8 24 23.8333 19 24.5 16.5C25.3333 16.5 27.2 16 28 14C27.5 13.5 25.5 13.5 24.5 14C24.5 13.2 24 11.5 23 11C22.3333 11.6667 21.3 13.4 22.5 15C22 16 20.6667 16 20 16H6.9429C6.41342 16 5.97041 16.4128 6.00155 16.9414Z"
+						fill="white"
+					/>
+					<path d="M9 13H7V15H9V13Z" fill="white" />
+					<path d="M10 13H12V15H10V13Z" fill="white" />
+					<path d="M15 13H13V15H15V13Z" fill="white" />
+					<path d="M16 13H18V15H16V13Z" fill="white" />
+					<path d="M21 13H19V15H21V13Z" fill="white" />
+					<path d="M15 10H13V12H15V10Z" fill="white" />
+					<path d="M16 10H18V12H16V10Z" fill="white" />
+				</svg>
+			);
+		}
 	});
 
 	const jsonLd = {
@@ -344,11 +370,10 @@ export function Projet() {
 		},
 		mainEntityOfPage: `https://ludovic-leblond.fr/${projet?.name}`,
 	};
-	
-	if (!projet) {
-    return <div>Chargement...</div>;
-  }
 
+	if (!projet) {
+		return <div>Chargement...</div>;
+	}
 
 	return (
 		<>
@@ -381,10 +406,7 @@ export function Projet() {
 						projet?.name
 					} réalisé avec des technologies comme ${projet?.techno.join(", ")}`}
 				/>
-				<meta
-					name="twitter:image"
-					content={projet?.picture}
-				/>
+				<meta name="twitter:image" content={projet?.picture} />
 				<meta name="twitter:card" content="summary_large_image" />
 
 				{/* JSON-LD */}
@@ -426,7 +448,7 @@ export function Projet() {
 					<div className="wrapper-projet-infos">
 						{projet?.ameliorations && (
 							<div className="wrapper-projet-infos-ameliorations">
-								<h3>Améliorations à faire</h3>
+								<h3>Améliorations à apporter</h3>
 								<ul>
 									{projet?.ameliorations?.map((amelioration, index) => (
 										<li key={index}>{amelioration}</li>
@@ -436,7 +458,7 @@ export function Projet() {
 						)}
 						{projet?.competences && (
 							<div className="wrapper-projet-infos-competences">
-								<h3>Compétences accises</h3>
+								<h3>Compétences aquises</h3>
 								<ul>
 									{projet?.competences?.map((competence, index) => (
 										<li key={index}>{competence}</li>
