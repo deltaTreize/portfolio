@@ -1,3 +1,7 @@
 User-agent: *
 Disallow: /private/
+Disallow: /admin/
+Disallow: /login/
+Allow: /
+
 Sitemap: https://ludovic-leblond.fr/sitemap.xml

@@ -7,7 +7,6 @@
 }
 
 h1 {
-	position: absolute;
 	width: 100%;
 	text-align: center;
 	color: #fff;
@@ -18,10 +17,6 @@ h1 {
 	padding-top: 20px;
 	z-index: 1000;
 	pointer-events: none;
-	@media (max-width: 767px) {
-		position: relative;
-	}
-
 	@media (max-width: 425px) {
 		font-size: 30px;
 	}

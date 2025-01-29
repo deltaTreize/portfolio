@@ -1,7 +1,8 @@
 [
 	{
 		"id": 1,
-		"name": "candyshop-by-stess.fr",
+		"name": "candyshop-by-stess",
+		"pictureHome": "./assets/candyshop.png",
 		"picture": "./assets/candyshop-projet.png",
 		"site": "https://candyshop-by-stess.fr",
 		"text": "Ce projet représente mon premier pas dans le développement professionnel. La cliente avait besoin d’un site e-commerce moderne pour commercialiser ses produits et accroître leur visibilité en ligne. J’ai conçu et développé à la fois le Front-End et le Back-End, intégrant des fonctionnalités essentielles telles que la gestion des produits, des clients, des commandes, ainsi que le système de paiement sécurisé via Stripe. Ce projet m’a offert l’opportunité de mettre en œuvre mes compétences en développement web tout en répondant aux attentes concrètes d’une entreprise.",
@@ -11,61 +12,24 @@
 		],
 		"ameliorations": [
 		],
-		"techno": ["HTML", "SCSS", "TSX", "REACT", "EXPRESS", "SQLite", "Docker"],
+		"techno": ["HTML", "SCSS", "TYPESCRIPT", "REACT", "EXPRESS", "SQLITE", "DOCKER"],
 		"color": "red"
 	},
 	{
 		"id": 2,
-		"name": "ohmyfood",
-		"picture": "./assets/ohmyfood-projet.webp",
-		"code": "https://github.com/deltaTreize/projet4",
-		"site": "https://deltatreize.github.io/projet4/homePage.html",
-		"text": "Ce projet avait pour but de créer un site de plusieurs pages et d'apprendre SCSS. Avec interdiction d'utiliser JavaScript.",
-		"competences": ["SCSS"],
-		"ameliorations": [
-			"créer un DB pour les infos de tous les restaurants",
-			"filtrage grace au input location"
-		],
-		"techno": ["HTML", "SCSS", "Figma"],
-		"color": "#7451eb"
+		"name": "HarryPotter",
+		"pictureHome": "./assets/harryPotter.png",
+		"picture": "./assets/harryPotter-projet.webp",
+		"site": "https://harry-potter-react-three.vercel.app/",
+		"text": "Ce site est mon site personnel. J'ai commencé ce projet durant ma période d'apprentissage en autodidacte avant ma formation au sein de OpenClassroom. J'y apporte des améliorations régulièrement pendant mon temps libre.",
+		"competences": ["Ce projet est mon premier projet REACT"],
+		"techno": ["HTML", "SCSS", "JAVASCRIPT", "REACT"],
+		"color": "red"
 	},
 	{
 		"id": 3,
-		"name": "sophieBuel",
-		"picture": "./assets/sophieBuel-projet.webp",
-		"code": "https://github.com/deltaTreize/projet6",
-		"text": "Premier projet de ma formation dans lequel j'utilise le langage JavaScript. Pour ce projet j'utilise une DataBase SQLITE (c'est pour ça que je ne peux pas utiliser vercel pour le lien du site). Cette DataBase ainsi que le Back-End étaient fournis, j'ai juste utilisé les routes pré-codées dans le Back-End.",
-		"competences": ["YAML", "SWAGGER", "FETCH (JS)", "création de modal"],
-		"ameliorations": ["rendre utilisable le formulaire de contact"],
-		"techno": [
-			"HTML",
-			"CSS",
-			"JS",
-			"YAML",
-			"EXPRESS",
-			"SQLite",
-			"Swagger",
-			"Figma"
-		],
-		"color": "#7451eb"
-	},
-	{
-		"id": 4,
-		"name": "Kasa",
-		"picture": "./assets/kasa-projet.webp",
-		"code": "https://github.com/deltaTreize/p8_kasa",
-		"site": "https://p8-kasa-umber.vercel.app/",
-		"text": "Premier projet de ma formation dans lequel j'utilise REACT et première fois pour moi que j'utilise REACT-ROUTER.",
-		"competences": ["REACT-ROUTER"],
-		"ameliorations": [
-			"mettre en place un système pour filtrer par localisation ou par tag"
-		],
-		"techno": ["HTML", "SCSS", "JSX", "REACT"],
-		"color": "#7451eb"
-	},
-	{
-		"id": 5,
 		"name": "LudoBank",
+		"pictureHome": "./assets/ludobank.png",
 		"picture": "./assets/ludobank-projet.webp",
 		"code": "https://github.com/deltaTreize/p11",
 		"site": "https://P11-three.vercel.app/",
@@ -75,17 +39,59 @@
 			"J'ai appris TYPESCRIPT sur ce projet",
 			"Création de routes dans mon Back-End avec EXPRESS"
 		],
-		"techno": ["HTML", "SCSS", "TSX", "REACT", "REDUX", "EXPRESS", "MONGOOSE"],
+		"techno": ["HTML", "SCSS", "TYPESCRIPT", "REACT", "REDUX", "EXPRESS", "MONGODB"],
 		"color": "red"
 	},
 	{
+		"id": 4,
+		"name": "ohmyfood",
+		"pictureHome": "./assets/ohmyfood.png",
+		"picture": "./assets/ohmyfood-projet.webp",
+		"code": "https://github.com/deltaTreize/projet4",
+		"site": "https://deltatreize.github.io/projet4/homePage.html",
+		"text": "Ce projet avait pour but de créer un site de plusieurs pages et d'apprendre SCSS. Avec interdiction d'utiliser JavaScript.",
+		"competences": ["SCSS"],
+		"ameliorations": [
+			"créer un DB pour les infos de tous les restaurants",
+			"filtrage grace au input location"
+		],
+		"techno": ["HTML", "SCSS", "FIGMA"],
+		"color": "#7451eb"
+	},
+	{
+		"id": 5,
+		"name": "sophieBuel",
+		"pictureHome": "./assets/sophieBuel.png",
+		"picture": "./assets/sophieBuel-projet.webp",
+		"code": "https://github.com/deltaTreize/projet6",
+		"text": "Premier projet de ma formation dans lequel j'utilise le langage JavaScript. Pour ce projet j'utilise une DataBase SQLITE (c'est pour ça que je ne peux pas utiliser vercel pour le lien du site). Cette DataBase ainsi que le Back-End étaient fournis, j'ai juste utilisé les routes pré-codées dans le Back-End.",
+		"competences": ["YAML", "SWAGGER", "FETCH (JS)", "création de modal"],
+		"ameliorations": ["rendre utilisable le formulaire de contact"],
+		"techno": [
+			"HTML",
+			"CSS",
+			"JAVASCRIPT",
+			"YAML",
+			"EXPRESS",
+			"SQLITE",
+			"SWAGGER",
+			"FIGMA"
+		],
+		"color": "#7451eb"
+	},
+	{
 		"id": 6,
-		"name": "HarryPotter",
-		"picture": "./assets/harryPotter-projet.webp",
-		"site": "https://harry-potter-react-three.vercel.app/",
-		"text": "Ce site est mon site personnel. J'ai commencé ce projet durant ma période d'apprentissage en autodidacte avant ma formation au sein de OpenClassroom. J'y apporte des améliorations régulièrement pendant mon temps libre.",
-		"competences": ["Ce projet est mon premier projet REACT"],
-		"techno": ["HTML", "SCSS", "JSX", "REACT"],
-		"color": "red"
+		"name": "Kasa",
+		"pictureHome": "./assets/kasa.png",
+		"picture": "./assets/kasa-projet.webp",
+		"code": "https://github.com/deltaTreize/p8_kasa",
+		"site": "https://p8-kasa-umber.vercel.app/",
+		"text": "Premier projet de ma formation dans lequel j'utilise REACT et première fois pour moi que j'utilise REACT-ROUTER.",
+		"competences": ["REACT-ROUTER"],
+		"ameliorations": [
+			"mettre en place un système pour filtrer par localisation ou par tag"
+		],
+		"techno": ["HTML", "SCSS", "JAVASCRIPT", "REACT"],
+		"color": "#7451eb"
 	}
 ]
