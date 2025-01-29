@@ -24,13 +24,13 @@ export function Projet() {
 		"@type": "CreativeWork",
 		name: projet?.name,
 		description: projet?.text,
-		url: `https://ludovic-leblond.fr/${projet?.name}`,
+		url: `https://ludovic-leblond.fr/projets/${projet?.name}`,
 		image: projet?.pictureHome,
 		author: {
 			"@type": "Person",
 			name: "Ludovic LEBLOND",
 		},
-		mainEntityOfPage: `https://ludovic-leblond.fr/${projet?.name}`,
+		mainEntityOfPage: `https://ludovic-leblond.fr/projets/${projet?.name}`,
 	};
 
 	if (!projet) {
@@ -43,7 +43,7 @@ export function Projet() {
 				<title>{projet?.name} - Mon Portfolio</title>
 				<link
 					rel="canonical"
-					href={`https://ludovic-leblond.fr/${projet?.name}`}
+					href={`https://ludovic-leblond.fr/projets/${projet?.name}`}
 				/>
 				<meta
 					name="description"
@@ -56,7 +56,7 @@ export function Projet() {
 					property="og:description"
 					content={projet?.text}
 				/>
-				<meta property="og:url" content={`https://ludovic-leblond.fr/${projet?.name}`} />
+				<meta property="og:url" content={`https://ludovic-leblond.fr/projets/${projet?.name}`} />
 				<meta property="og:locale" content="fr_FR" />
 				<meta property="article:author" content="Ludovic LEBLOND" />
 				<meta property="og:type" content="article" />

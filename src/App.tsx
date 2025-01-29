@@ -16,7 +16,7 @@ function App() {
 					<Background />
 					<Routes>
 						<Route path="/" element={<Acceuil />} />
-						<Route path="/:projetName" element={<Projet />} />
+						<Route path="/projets/:projetName" element={<Projet />} />
 					</Routes>
 					<Footer />
 				</BrowserRouter>

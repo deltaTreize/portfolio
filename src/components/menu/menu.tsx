@@ -12,7 +12,7 @@ export function Menu() {
 					<li key={projet.id} style={{border: `2px solid ${projet.color}`}}>
 						<h3>{projet.name}</h3>
 						<NavLink
-							to={`/${projet.name}`}
+							to={`/projets/${projet.name}`}
 							style={{ backgroundImage: `url(${projet.pictureHome})` }}
 						></NavLink>
 					</li>
