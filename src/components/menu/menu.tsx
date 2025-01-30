@@ -14,6 +14,7 @@ export function Menu() {
 						<NavLink
 							to={`/projets/${projet.name}`}
 							style={{ backgroundImage: `url(${projet.pictureHome})` }}
+							aria-label={`liens vers projet ${projet.name}`}
 						></NavLink>
 					</li>
 				))}

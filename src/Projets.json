@@ -2,8 +2,8 @@
 	{
 		"id": 1,
 		"name": "candyshop-by-stess",
-		"pictureHome": "./assets/candyshop.png",
-		"picture": "../assets/candyshop-projet.png",
+		"pictureHome": "./assets/candyshop.webp",
+		"picture": "../assets/candyshop-projet.webp",
 		"site": "https://candyshop-by-stess.fr",
 		"text": "Ce projet représente mon premier pas dans le développement professionnel. La cliente avait besoin d’un site e-commerce moderne pour commercialiser ses produits et accroître leur visibilité en ligne. J’ai conçu et développé à la fois le Front-End et le Back-End, intégrant des fonctionnalités essentielles telles que la gestion des produits, des clients, des commandes, ainsi que le système de paiement sécurisé via Stripe. Ce projet m’a offert l’opportunité de mettre en œuvre mes compétences en développement web tout en répondant aux attentes concrètes d’une entreprise.",
 		"competences": [
@@ -18,7 +18,7 @@
 	{
 		"id": 2,
 		"name": "HarryPotter",
-		"pictureHome": "./assets/harryPotter.png",
+		"pictureHome": "./assets/harryPotter.webp",
 		"picture": "../assets/harryPotter-projet.webp",
 		"site": "https://harry-potter-react-three.vercel.app/",
 		"text": "Ce site est mon site personnel. J'ai commencé ce projet durant ma période d'apprentissage en autodidacte avant ma formation au sein de OpenClassroom. J'y apporte des améliorations régulièrement pendant mon temps libre.",
@@ -29,7 +29,7 @@
 	{
 		"id": 3,
 		"name": "LudoBank",
-		"pictureHome": "./assets/ludobank.png",
+		"pictureHome": "./assets/ludobank.webp",
 		"picture": "../assets/ludobank-projet.webp",
 		"code": "https://github.com/deltaTreize/p11",
 		"site": "https://P11-three.vercel.app/",
@@ -45,7 +45,7 @@
 	{
 		"id": 4,
 		"name": "ohmyfood",
-		"pictureHome": "./assets/ohmyfood.png",
+		"pictureHome": "./assets/ohmyfood.webp",
 		"picture": "../assets/ohmyfood-projet.webp",
 		"code": "https://github.com/deltaTreize/projet4",
 		"site": "https://deltatreize.github.io/projet4/homePage.html",
@@ -61,7 +61,7 @@
 	{
 		"id": 5,
 		"name": "sophieBuel",
-		"pictureHome": "./assets/sophieBuel.png",
+		"pictureHome": "./assets/sophieBuel.webp",
 		"picture": "../assets/sophieBuel-projet.webp",
 		"code": "https://github.com/deltaTreize/projet6",
 		"text": "Premier projet de ma formation dans lequel j'utilise le langage JavaScript. Pour ce projet j'utilise une DataBase SQLITE (c'est pour ça que je ne peux pas utiliser vercel pour le lien du site). Cette DataBase ainsi que le Back-End étaient fournis, j'ai juste utilisé les routes pré-codées dans le Back-End.",
@@ -82,7 +82,7 @@
 	{
 		"id": 6,
 		"name": "Kasa",
-		"pictureHome": "./assets/kasa.png",
+		"pictureHome": "./assets/kasa.webp",
 		"picture": "../assets/kasa-projet.webp",
 		"code": "https://github.com/deltaTreize/p8_kasa",
 		"site": "https://p8-kasa-umber.vercel.app/",

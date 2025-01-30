@@ -75,7 +75,7 @@ export function Projet() {
 			</Helmet>
 
 			<div className="projet">
-				<Link to="/">
+				<Link to="/" aria-label="liens vers accueil">
 					<i
 						className="fa-solid fa-arrow-left"
 						style={{ "--color": `${projet?.color}` } as React.CSSProperties}
@@ -86,12 +86,12 @@ export function Projet() {
 					<div className="wrapper-img">
 						<nav className="wrapper-img-nav">
 							{projet?.code && (
-								<a href={projet?.code} target="_blank" rel="noreferrer">
+								<a href={projet?.code} target="_blank" rel="noreferrer" aria-label="liens vers code">
 									<i className="fa-brands fa-github"></i>Code
 								</a>
 							)}
 							{projet?.site && (
-								<a href={projet?.site} target="_blank" rel="noreferrer">
+								<a href={projet?.site} target="_blank" rel="noreferrer" aria-label="liens vers site">
 									<i className="fa-solid fa-globe"></i>Site
 								</a>
 							)}
