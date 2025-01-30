@@ -18,6 +18,11 @@ export function Acceuil() {
 			url: "https://ludovic-leblond.fr",
 		},
 		image: "https://ludovic-leblond.fr/assets/moi.webp",
+		mainEntity: {
+    "@type": "Person",
+    "name": "Ludovic LEBLOND",
+    "url": "https://ludovic-leblond.fr/"
+  }
 	};
 	return (
 		<>
@@ -48,7 +53,7 @@ export function Acceuil() {
 				/>
 				<meta name="twitter:image" content="https://ludovic-leblond.fr/assets/moi.webp" />
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:site" content="@ton_twitter" /> {/* Remplace "@ton_twitter" par ton handle */}
+				<meta name="twitter:site" content="@deltaTreize" />
 
 				{/* JSON-LD */}
 				<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
