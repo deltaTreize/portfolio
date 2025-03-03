@@ -2,7 +2,6 @@
 
 .footer{
   box-sizing: border-box;
-  z-index: 100;
   width: 100vw;
   height: 50px;
   background: #383838;
@@ -10,7 +9,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  // bottom: 0;
   .nav{
     display: flex;
     height: 100%;
