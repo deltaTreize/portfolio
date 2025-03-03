@@ -1,0 +1,23 @@
+#root {
+	position: relative;
+	overflow-x: hidden;
+	@media (min-width: 769px) {
+		max-height: 100vh;
+	}
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	background: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding-top: 20px;
+	z-index: 1000;
+	pointer-events: none;
+	@media (max-width: 425px) {
+		font-size: 30px;
+	}
+}
