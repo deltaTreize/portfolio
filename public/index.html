@@ -4,16 +4,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="robots" content="index, follow" />
+		<link rel="icon" href="./assets/logo.webp" />
 		<!-- Open Graph -->
 		<meta property="og:title" content="Portfolio de Ludovic LEBLOND" />
 		<meta
 			property="og:description"
-			content="Développeur Web spécialisé en React et TypeScript. Découvrez mes projets et compétences !"
+			content="Développeur Web spécialisé en React et TypeScript. Découvrez mes projets et mes formations !"
 		/>
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:image"
-			content="https://ludovic-leblond.fr/assets/moi.webp"
+			content="https://ludovic-leblond.fr/assets/logo.webp"
 		/>
 		<meta property="og:url" content="https://ludovic-leblond.fr" />
 		<meta property="og:locale" content="fr_FR" />
@@ -23,33 +24,110 @@
 		<meta name="twitter:title" content="Portfolio de Ludovic LEBLOND" />
 		<meta
 			name="twitter:description"
-			content="Développeur Web spécialisé en React et TypeScript. Découvrez mes projets et compétences !"
+			content="Développeur Web spécialisé en React et TypeScript. Découvrez mes projets et mes formations !"
 		/>
 		<meta
 			name="twitter:image"
-			content="https://ludovic-leblond.fr/assets/moi.webp"
+			content="https://ludovic-leblond.fr/assets/logo.webp"
 		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css"
+		/>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"
+		></script>
+		<script>
+			window.addEventListener("load", function () {
+				window.cookieconsent.initialise({
+					palette: {
+						popup: { background: "#000" },
+						button: { background: "#f1d600" },
+					},
+					theme: "classic",
+					type: "info",
+					content: {
+						message:
+							"Ce site utilise des cookies pour améliorer l'expérience utilisateur.",
+						dismiss: "Accepter tout",
+						allow: "Accepter seulement les essentiels",
+						link: "En savoir plus",
+						href: "/politique-de-cookies",
+					},
+					elements: {
+						dismiss:
+							'<button type="button" class="cc-btn cc-dismiss">Accepter tout</button>',
+						allow:
+							'<button type="button" class="cc-btn cc-allow">Accepter seulement les essentiels</button>',
+					},
+					compliance: {
+						info: '<div class="cc-compliance">{{dismiss}}{{allow}}</div>',
+					},
+					onInitialise: function (status) {
+						if (status === "allow") {
+							loadStripe();
+						}
+						if (status === "dismiss") {
+							loadStripe();
+							loadGoogleAnalytics();
+						}
+					},
+					onStatusChange: function (status) {
+						if (status === "allow") {
+							loadStripe();
+						}
+						if (status === "dismiss") {
+							loadStripe();
+							loadGoogleAnalytics();
+						}
+					},
+				});
+			});
 
+			function loadStripe() {
+				if (!window.stripeLoaded) {
+					var stripeScript = document.createElement("script");
+					stripeScript.src = "https://js.stripe.com/v3/buy-button.js";
+					stripeScript.async = true;
+					document.head.appendChild(stripeScript);
+					window.stripeLoaded = true;
+				}
+			}
+
+			function loadGoogleAnalytics() {
+				if (!window.gaLoaded) {
+					var gaScript = document.createElement("script");
+					gaScript.src =
+						"https://www.googletagmanager.com/gtag/js?id=G-FSKNPX942Q";
+					gaScript.async = true;
+					document.head.appendChild(gaScript);
+
+					window.dataLayer = window.dataLayer || [];
+					function gtag() {
+						dataLayer.push(arguments);
+					}
+					gtag("js", new Date());
+					gtag("config", "G-FSKNPX942Q");
+
+					window.gaLoaded = true;
+				}
+			}
+		</script>
 		<script
 			src="https://kit.fontawesome.com/8105007121.js"
 			crossorigin="anonymous"
 		></script>
 	</head>
-	<!-- Google tag (gtag.js) -->
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=G-FSKNPX942Q"
-	></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-
-		gtag("config", "G-FSKNPX942Q");
-	</script>
 	<body>
 		<div id="root"></div>
 	</body>
 </html>
+<!----------
+    /\
+   /  \
+  /    \
+ / XIII \
+/________\
+------------>

@@ -9,30 +9,18 @@
 	color: aliceblue;
 	box-sizing: border-box;
 	padding: 0 10px;
-	margin-top: 30px;
+	padding-top: 30px;
 	@media screen and (min-width: 1025px) {
 		height: calc(100vh - 50px);
 		justify-content: space-between;
-    margin: 0;
+		margin: 0;
 	}
 	.fa-arrow-left {
-		position: absolute;
-		top: 15px;
-		left: 5vw;
-		transform: translate(-50%, -50%);
-		color: aliceblue;
-		font-size: 35px;
-		cursor: pointer;
 		&:hover {
 			color: var(--color);
 		}
-		@media screen and (max-width: 425px) {
-			font-size: 30px;
-		}
-    @media screen and (min-width: 1025px) {
-      top: 45px;
-    }
 	}
+
 	.projet-wrapper {
 		display: flex;
 		flex-direction: column;

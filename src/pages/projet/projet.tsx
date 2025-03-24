@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import { Menu } from "../../components/menu/menu.tsx";
 import { Technos } from "../../components/technos/technos.tsx";
 import "./projet.scss";
@@ -18,7 +18,7 @@ export function Projet() {
 			name: "Ludovic LEBLOND",
 			url: "https://ludovic-leblond.fr",
 		},
-		image: "https://ludovic-leblond.fr/assets/moi.webp",
+		image: "https://ludovic-leblond.fr/assets/logo.webp",
 		mainEntity: {
 			"@type": "Person",
 			name: "Ludovic LEBLOND",
@@ -46,7 +46,7 @@ export function Projet() {
 				<meta property="og:type" content="website" />
 				<meta
 					property="og:image"
-					content="https://ludovic-leblond.fr/assets/moi.webp"
+					content="https://ludovic-leblond.fr/assets/logo.webp"
 				/>
 				<meta property="og:url" content="https://ludovic-leblond.fr" />
 				<meta property="og:locale" content="fr_FR" />
@@ -59,7 +59,7 @@ export function Projet() {
 				/>
 				<meta
 					name="twitter:image"
-					content="https://ludovic-leblond.fr/assets/moi.webp"
+					content="https://ludovic-leblond.fr/assets/logo.webp"
 				/>
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:site" content="@deltaTreize" />

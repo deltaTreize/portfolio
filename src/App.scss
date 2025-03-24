@@ -1,7 +1,13 @@
 #root {
 	position: relative;
 	width: 100%;
-	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 90%)
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 1) 55%,
+		rgba(56, 56, 56, 1) 90%
+	);
+	box-sizing: border-box;
 }
 
 h1 {
@@ -16,5 +22,21 @@ h1 {
 	pointer-events: none;
 	@media (max-width: 425px) {
 		font-size: 30px;
+	}
+}
+
+.fa-arrow-left {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	transform: translate(-50%, -50%);
+	color: aliceblue;
+	font-size: 35px;
+	cursor: pointer;
+	@media screen and (max-width: 425px) {
+		font-size: 30px;
+	}
+	@media screen and (min-width: 1025px) {
+		top: 45px;
 	}
 }

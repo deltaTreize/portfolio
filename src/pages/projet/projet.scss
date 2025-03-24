@@ -12,20 +12,11 @@
 	@media screen and (min-width: 769px) {
 		height: calc(100vh - 50px);
 		flex-direction: row;
-		justify-content: space-between;	}
+		justify-content: space-between;
+	}
 	.fa-arrow-left {
-		position: absolute;
-		top: 45px;
-		left: 5vw;
-		transform: translate(-50%, -50%);
-		color: aliceblue;
-		font-size: 35px;
-		cursor: pointer;
 		&:hover {
-			color: var(--color);
-		}
-		@media screen and (max-width: 425px) {
-			font-size: 30px;
+			color: gold;
 		}
 	}
 }

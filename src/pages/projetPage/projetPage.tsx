@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import projets from "../../Projets.json";
 import technos from "../../Techno.json";
 import "./projetPage.scss";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 export function ProjetPage() {
 	const { projetName } = useParams();
@@ -69,7 +69,7 @@ export function ProjetPage() {
 			</Helmet>
 			<div className="projetPage">
 				<Link to="/projets" aria-label="liens vers accueil" style={{ color: projet?.color }}>
-					<i className="fa-solid fa-arrow-left"></i>
+					<i className="fa-solid fa-arrow-left" ></i>
 				</Link>
 				<h1 style={{ color: projet?.color }}>{projet?.name}</h1>
 				<div className="projet-wrapper">
