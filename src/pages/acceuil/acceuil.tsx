@@ -1,28 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { About } from "../../components/about/about.tsx";
-import { Menu } from "../../components/menu/menu.tsx";
-import { Technos } from "../../components/technos/technos.tsx";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
+import { NavLink } from "react-router-dom";
+import projets from "../../Projets.json";
 import "./acceuil.scss";
 
 export function Acceuil() {
+	const [allProjetImages, setAllProjetImages] = useState<string[]>([]);
+	const [picture, setPicture] = useState<string>(allProjetImages[0]);
+
+	useEffect(() => {
+		projets.forEach((projet) => {
+			setAllProjetImages((prev) => [...prev, projet.pictureHome]);
+			setPicture(projet.pictureHome);
+		});
+	}, []);
+
+	useEffect(() => {
+		let i = 0;
+		const interval = setInterval(() => {
+			setPicture(allProjetImages[i]);
+			i = (i + 1) % allProjetImages.length;
+		}, 5000);
+		return () => clearInterval(interval);
+	}, [allProjetImages]);
+
 	const jsonLd = {
 		"@context": "https://schema.org",
 		"@type": "ProfilePage",
 		name: "Page d'accueil du Portfolio de Ludovic LEBLOND",
 		url: "https://ludovic-leblond.fr",
-		description: "Portfolio de Ludovic LEBLOND, Développeur/Intégrateur Web spécialisé en React et TypeScript. Découvrez mes projets et compétences.",
+		description:
+			"Portfolio de Ludovic LEBLOND, Développeur/Intégrateur Web spécialisé en React et TypeScript. Découvrez mes projets et compétences.",
 		publisher: {
 			"@type": "Person",
 			name: "Ludovic LEBLOND",
 			url: "https://ludovic-leblond.fr",
 		},
-		image: "https://ludovic-leblond.fr/assets/moi.webp",
+		image: "https://ludovic-leblond.fr/assets/logo.webp",
 		mainEntity: {
-    "@type": "Person",
-    "name": "Ludovic LEBLOND",
-    "url": "https://ludovic-leblond.fr/"
-  }
+			"@type": "Person",
+			name: "Ludovic LEBLOND",
+			url: "https://ludovic-leblond.fr/",
+		},
 	};
 	return (
 		<>
@@ -33,37 +53,49 @@ export function Acceuil() {
 					name="description"
 					content="Portfolio de Ludovic LEBLOND, Développeur/Intégrateur Web spécialisé en React et TypeScript. Découvrez mes projets et compétences."
 				/>
-
-				{/* Open Graph */}
-				<meta property="og:title" content="Portfolio de Ludovic LEBLOND" />
-				<meta
-					property="og:description"
-					content="Portfolio de Ludovic LEBLOND, Développeur/Intégrateur Web spécialisé en React et TypeScript. Découvrez mes projets et compétences."
-				/>
-				<meta property="og:type" content="website" />
-				<meta property="og:image" content="https://ludovic-leblond.fr/assets/moi.webp" />
-				<meta property="og:url" content="https://ludovic-leblond.fr" />
-				<meta property="og:locale" content="fr_FR" />
-
-				{/* Twitter */}
-				<meta name="twitter:title" content="Portfolio de Ludovic LEBLOND" />
-				<meta
-					name="twitter:description"
-					content="Portfolio de Ludovic LEBLOND, Développeur/Intégrateur Web spécialisé en React et TypeScript. Découvrez mes projets et compétences."
-				/>
-				<meta name="twitter:image" content="https://ludovic-leblond.fr/assets/moi.webp" />
-				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:site" content="@deltaTreize" />
-
 				{/* JSON-LD */}
 				<script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 			</Helmet>
 			<div className="acceuil">
 				<h1>LEBLOND Ludovic</h1>
 				<div className="acceuil-wrapper">
+					<nav>
+						<div className="prestation-container">
+							<h2>PRESTATIONS</h2>
+							<div className="prestation-wrapper">
+								<div className="title-link">
+									<h3>
+										Venez découvrir les differentes prestations que je propose !
+									</h3>
+									<NavLink to="/prestations" className="menu-link">
+										Prestations
+									</NavLink>
+								</div>
+								<div className="images">
+									<img src="./assets/photoshop.webp" alt="photoshop" />
+									<img src="./assets/canva.webp" alt="canva" />
+								</div>
+							</div>
+						</div>
+						<div className="projets-container">
+							<h2>PROJETS</h2>
+							<div className="projets-wrapper">
+								<div className="title-link">
+									<h3>
+										Venez découvrir les differents projets déja realisés !
+									</h3>
+									<NavLink to="/projets" className="menu-link">
+										Projets
+									</NavLink>
+								</div>
+								<div className="images"
+								>
+									<img src={picture} alt="projets" />
+								</div>
+							</div>
+						</div>
+					</nav>
 					<About />
-					<Menu />
-					<Technos />
 				</div>
 			</div>
 		</>
