@@ -8,6 +8,7 @@ import "./acceuil.scss";
 export function Acceuil() {
 	const [allProjetImages, setAllProjetImages] = useState<string[]>([]);
 	const [picture, setPicture] = useState<string>(allProjetImages[0]);
+	const width = window.innerWidth;
 
 	useEffect(() => {
 		projets.forEach((projet) => {
@@ -60,9 +61,20 @@ export function Acceuil() {
 				<h1>LEBLOND Ludovic</h1>
 				<div className="acceuil-wrapper">
 					<nav>
-						<div className="prestation-container" style={{ backgroundImage: `url(/assets/presta7.webp)`}}>
+						<div
+							className="prestation-container"
+							style={
+								width <= 425
+									? { backgroundImage: `url("/assets/presta7-425.webp")` }
+									: width <= 768
+									? { backgroundImage: `url("/assets/presta7-768.webp")` }
+									: {
+											backgroundImage: `url("/assets/presta7.webp")`,
+									  }
+							}
+						>
 							<h2>PRESTATIONS</h2>
-							<div className="prestation-wrapper" >
+							<div className="prestation-wrapper">
 								<div className="title-link">
 									<h3>
 										Venez découvrir les differentes prestations que je propose !
@@ -72,12 +84,21 @@ export function Acceuil() {
 									</NavLink>
 								</div>
 								<div className="images">
-									<div style={{ backgroundImage: `url(/assets/photoshop.webp)`}} ></div>
-									<div style={{ backgroundImage: `url(/assets/canva.webp)`}} ></div>
+									<div
+										style={{ backgroundImage: `url(/assets/photoshop.webp)` }}
+									></div>
+									<div
+										style={{ backgroundImage: `url(/assets/canva.webp)` }}
+									></div>
 								</div>
 							</div>
 						</div>
-						<div className="projets-container" style={{ backgroundImage: `url("/assets/businessman-2682712_1280.webp")`}}>
+						<div
+							className="projets-container"
+							style={{
+								backgroundImage: `url("/assets/businessman-2682712_1280.webp")`,
+							}}
+						>
 							<h2>PROJETS</h2>
 							<div className="projets-wrapper">
 								<div className="title-link">
@@ -88,9 +109,8 @@ export function Acceuil() {
 										Projets
 									</NavLink>
 								</div>
-								<div className="images"
-								>
-									<div style={{ backgroundImage: `url("${picture}")`}}/>
+								<div className="images">
+									<div style={{ backgroundImage: `url("${picture}")` }} />
 								</div>
 							</div>
 						</div>
