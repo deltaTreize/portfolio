@@ -25,6 +25,7 @@
 				background-size: cover;
 				background-position: center;
 				overflow: hidden;
+				will-change: transform;
 				border-radius: 10px;
 				height: 70vh;
 				.prestation-wrapper {
@@ -73,6 +74,7 @@
 				background-size: cover;
 				background-position: center;
 				overflow: hidden;
+				will-change: transform;
 				border-radius: 10px;
 				height: auto;
 				@media screen and (min-width: 769px) {

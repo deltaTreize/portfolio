@@ -8,9 +8,8 @@ export default defineConfig({
   server: {
     open: true,
     port: 3000,
-    fallback: true,
+    historyApiFallback: true, // Seulement utile avec React Router
   },
-  define: { "process.env": {} },
   build: {
     outDir: 'dist',
   },
