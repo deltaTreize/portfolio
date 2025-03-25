@@ -12,7 +12,6 @@ import "./App.scss";
 function App() {
 	return (
 		<HelmetProvider>
-			<StrictMode>
 				<BrowserRouter>
 					<Routes>
 						<Route path="/" element={<Acceuil />} />
@@ -23,7 +22,6 @@ function App() {
 					</Routes>
 					<Footer />
 				</BrowserRouter>
-			</StrictMode>
 		</HelmetProvider>
 	);
 }

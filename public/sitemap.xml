@@ -2,49 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ludovic-leblond.fr</loc>
-    <lastmod>2024-12-03</lastmod>
+    <lastmod>2025-03-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
 
   <url>
+    <loc>https://ludovic-leblond.fr/prestations</loc>
+    <lastmod>2025-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://ludovic-leblond.fr/projets</loc>
+    <lastmod>2025-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
     <loc>https://ludovic-leblond.fr/projets/LudoBank</loc>
-    <lastmod>2024-12-03</lastmod>
+    <lastmod>2025-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://ludovic-leblond.fr/projets/HarryPotter</loc>
-    <lastmod>2024-12-03</lastmod>
+    <lastmod>2025-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://ludovic-leblond.fr/projets/candyshop-by-stess</loc>
-    <lastmod>2024-12-03</lastmod>
+    <lastmod>2025-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://ludovic-leblond.fr/projets/ohmyfood</loc>
-    <lastmod>2024-12-03</lastmod>
+    <lastmod>2025-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://ludovic-leblond.fr/projets/sophieBuel</loc>
-    <lastmod>2024-12-03</lastmod>
+    <lastmod>2025-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
     <loc>https://ludovic-leblond.fr/projets/Kasa</loc>
-    <lastmod>2024-12-03</lastmod>
+    <lastmod>2025-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>

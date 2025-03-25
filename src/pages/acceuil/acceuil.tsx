@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { About } from "../../components/about/about.tsx";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
+import { About } from "../../components/about/about.tsx";
 import projets from "../../Projets.json";
 import "./acceuil.scss";
 
@@ -60,9 +60,9 @@ export function Acceuil() {
 				<h1>LEBLOND Ludovic</h1>
 				<div className="acceuil-wrapper">
 					<nav>
-						<div className="prestation-container">
+						<div className="prestation-container" style={{ backgroundImage: `url(/assets/presta7.webp)`}}>
 							<h2>PRESTATIONS</h2>
-							<div className="prestation-wrapper">
+							<div className="prestation-wrapper" >
 								<div className="title-link">
 									<h3>
 										Venez découvrir les differentes prestations que je propose !
@@ -72,12 +72,12 @@ export function Acceuil() {
 									</NavLink>
 								</div>
 								<div className="images">
-									<img src="./assets/photoshop.webp" alt="photoshop" />
-									<img src="./assets/canva.webp" alt="canva" />
+									<div style={{ backgroundImage: `url(/assets/photoshop.webp)`}} ></div>
+									<div style={{ backgroundImage: `url(/assets/canva.webp)`}} ></div>
 								</div>
 							</div>
 						</div>
-						<div className="projets-container">
+						<div className="projets-container" style={{ backgroundImage: `url("/assets/businessman-2682712_1280.webp")`}}>
 							<h2>PROJETS</h2>
 							<div className="projets-wrapper">
 								<div className="title-link">
@@ -90,7 +90,7 @@ export function Acceuil() {
 								</div>
 								<div className="images"
 								>
-									<img src={picture} alt="projets" />
+									<div style={{ backgroundImage: `url("${picture}")`}}/>
 								</div>
 							</div>
 						</div>

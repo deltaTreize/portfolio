@@ -21,7 +21,6 @@
 			justify-content: center;
 			gap: 20px;
 			.prestation-container {
-				background-image: url("../../../public/assets/presta7.webp");
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
@@ -53,8 +52,13 @@
 						@media screen and (min-width: 1025px) {
 							flex-direction: row;
 						}
-						img {
+						div {
 							width: 100%;
+							aspect-ratio: 1/1;
+							background-repeat: no-repeat;
+							background-size: cover;
+							background-position: center;
+							overflow: hidden;
 							max-width: 155px;
 							@media screen and (min-width: 1025px) {
 								width: 45%;
@@ -65,7 +69,6 @@
 				}
 			}
 			.projets-container {
-				background-image: url("../../../public/assets/businessman-2682712_1280.webp");
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center;
@@ -102,8 +105,13 @@
 						align-items: center;
 						width: 100%;
 						height: auto;
-						img {
+						div {
 							width: 75%;
+							aspect-ratio: 1/1;
+							background-repeat: no-repeat;
+							background-size: cover;
+							background-position: center;
+							overflow: hidden;
 							@media screen and (min-width: 769px) {
 								max-width: 460px;
 							}

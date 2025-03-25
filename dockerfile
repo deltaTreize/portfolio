@@ -15,12 +15,14 @@ COPY . .
 
 # Construire l'application pour la production
 RUN npm run build
+RUN rm -rf /app/dist/static/js/*.map
+
 
 # Étape 2: Servir l'application avec un serveur web (Nginx)
 FROM nginx:alpine
 
 # Copier les fichiers construits depuis l'étape précédente dans le répertoire où Nginx les attend
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
 # Exposer le port 80 pour accéder à l'application
 EXPOSE 8080
