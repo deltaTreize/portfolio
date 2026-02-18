@@ -15,8 +15,19 @@
 		"techno": ["HTML", "SCSS", "TYPESCRIPT", "REACT", "EXPRESS", "SQLITE", "DOCKER"],
 		"color": "red"
 	},
-	{
+		{
 		"id": 2,
+		"name": "MaisonNet86",
+		"pictureHome": "./assets/maisonNet86.webp",
+		"picture": "../assets/maisonNet86-projet.webp",
+		"site": "https://maisonnet86.fr",
+		"text": "Création d'un site web pour une entreprise de nettoyage. J'ai créé le site de A à Z, en utilisant un template que j'ai personnalisé pour répondre aux besoins de l'entreprise. J'ai également intégré un formulaire de contact pour permettre aux clients potentiels de prendre facilement contact avec l'entreprise.",
+		"competences": ["NEXTJS"],
+		"techno": ["HTML", "SCSS", "JAVASCRIPT", "REACT", "NEXT"],
+		"color": "red"
+	},
+	{
+		"id": 3,
 		"name": "HarryPotter",
 		"pictureHome": "./assets/harryPotter.webp",
 		"picture": "../assets/harryPotter-projet.webp",
@@ -27,7 +38,7 @@
 		"color": "red"
 	},
 	{
-		"id": 3,
+		"id": 4,
 		"name": "LudoBank",
 		"pictureHome": "./assets/ludobank.webp",
 		"picture": "../assets/ludobank-projet.webp",
@@ -43,7 +54,7 @@
 		"color": "red"
 	},
 	{
-		"id": 4,
+		"id": 5,
 		"name": "ohmyfood",
 		"pictureHome": "./assets/ohmyfood.webp",
 		"picture": "../assets/ohmyfood-projet.webp",
@@ -59,7 +70,7 @@
 		"color": "#c900ff"
 	},
 	{
-		"id": 5,
+		"id": 6,
 		"name": "sophieBuel",
 		"pictureHome": "./assets/sophieBuel.webp",
 		"picture": "../assets/sophieBuel-projet.webp",
@@ -77,21 +88,6 @@
 			"SWAGGER",
 			"FIGMA"
 		],
-		"color": "#c900ff"
-	},
-	{
-		"id": 6,
-		"name": "Kasa",
-		"pictureHome": "./assets/kasa.webp",
-		"picture": "../assets/kasa-projet.webp",
-		"code": "https://github.com/deltaTreize/p8_kasa",
-		"site": "https://p8-kasa-umber.vercel.app/",
-		"text": "Premier projet de ma formation dans lequel j'utilise REACT et première fois pour moi que j'utilise REACT-ROUTER.",
-		"competences": ["REACT-ROUTER"],
-		"ameliorations": [
-			"mettre en place un système pour filtrer par localisation ou par tag"
-		],
-		"techno": ["HTML", "SCSS", "JAVASCRIPT", "REACT"],
 		"color": "#c900ff"
 	}
 ]
